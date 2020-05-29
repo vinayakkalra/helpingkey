@@ -1,0 +1,60 @@
+/* css */
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: barlow-b;
+    src: url(../fonts/Barlow-Bold.ttf);
+    font-display: swap;
+}
+.font-barlow-b {
+    font-family: barlow-b;
+}
+@font-face {
+    font-family: barlow-eb;
+    src: url(../fonts/Barlow-ExtraBold.ttf);
+    font-display: swap;
+}
+.font-barlow-eb {
+    font-family: barlow-eb;
+}
+@font-face {
+    font-family: barlow-m;
+    src: url(../fonts/Barlow-Medium.ttf);
+    font-display: swap;
+}
+.font-barlow-m {
+    font-family: barlow-m;
+}
+@font-face {
+    font-family: barlow-r;
+    src: url(../fonts/Barlow-Regular.ttf);
+    font-display: swap;
+}
+.font-barlow-r {
+    font-family: barlow-r;
+}
+@font-face {
+    font-family: saman;
+    src: url(../fonts/SAMAN___.TTF);
+    font-display: swap;
+}
+.font-saman {
+    font-family: saman;
+}
+@font-face {
+    font-family: devanagari;
+    src: url(../fonts/Devanagari.ttf);
+    font-display: swap;
+}
+.font-devanagari {
+    font-family: devanagari;
+}
+.color-white{
+    color: #fff;
+}
+.color-black{
+    color: #000;
+}
+.color-danger{
+    color: #dc3545;
+}
