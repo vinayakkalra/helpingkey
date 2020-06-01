@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150643411-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150643411-2');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PFRW8HP');</script>
+    <!-- End Google Tag Manager -->
+
+    <title>Checkout | Finstreet | India's 1st ever Financial Freedom Coach</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="icon" href="images/cropped-Fin-270x270.jpg"> -->
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- style -->
+    <style type="text/css">
+        /* model razorpay */
+
+        .closeButton {
+            margin-right: 40px;
+            color: #000;
+            font-size: 27px;
+        }
+
+        .formStyle {
+            padding: 0px 55px;
+        }
+
+        .formInput {
+            width: 50%;
+            float: left;
+            padding: 0px 25px;
+        }
+
+        .formInput1 {
+            width: 50%;
+            float: left;
+            padding: 0px 25px;
+        }
+
+        .buttonStyle {
+
+            background-color: #2fbe6d;
+            border-radius: 30px;
+            color: #fff;
+            float: right;
+            margin-bottom: 30px;
+            font-size: 16px;
+            border-color: #2fbe6d;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            z-index: 20;
+        }
+
+        .buttonStyle:hover {
+            color: #fff;
+            background-color: #2fbe6d;
+            border-color: #2fbe6d;
+        }
+
+        /* sucessfully form css */
+        .backToShop {
+            background-color: #2fbe6d;
+            border-radius: 100px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 0;
+            color: #fff !important;
+            opacity: 1;
+            justify-content: center;
+            display: flex;
+            margin: 0px 60px 0px 60px;
+            padding: 10px 40px;
+            margin-bottom: 20px !important;
+        }
+
+        .disabled {
+            color: currentColor;
+            cursor: not-allowed !important;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+
+        @media (max-width: 700px) {
+            .closeButton {
+                margin-right: 15px;
+                font-size: 27px;
+            }
+
+            .formStyle {
+                padding: 0px 0px;
+            }
+
+            .formInput {
+                width: 100%;
+                padding: 0px 0px;
+            }
+
+            .formInput1 {
+                width: 100%;
+                float: left;
+                padding: 0px 0px;
+            }
+
+            .buttonStyle {
+                float: left;
+            }
+
+            /* sucessfully form css */
+            .backToShop {
+                margin: 0px 10px 0px 10px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+    
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/ebc80d226d.js"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2925272084236286');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2925272084236286&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFRW8HP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="d-none d-lg-block">
+        <!-- Navigation -->
+        <nav class="d-flex justify-content-center navbar bg-danger font-barlow-r">
+            <h6 class="color-white m-0">DUE TO HIGH DEMAND WE ARE LIMITING THE PURCHASE OF ONLY 10 PIECES PER ORDER</h6>                
+        </nav>
+        <nav class="navbar navbar-expand-lg color-white font-barlow-r">
+            <div class="container-fluid">
+                <div class="container" style="padding:10px;">
+                    <div class="col-2 border-right text-center">
+                        <a class="navbar-brand color-white" href="/">LOGO</a>
+                    </div>   
+                    <div class="col-8 border-right">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="ml-auto mr-auto navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link color-white" href="/">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-white" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-white" href="affiliate">Affiliate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-white" href="user-login">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-white" href="#">Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <h7><i class="fa fa-phone"></i> +91 9876543210</h7>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <div class="container-fluid" style="margin-top:-110px;padding-top:50px;background-image:url(images/background-pic.png);height:530px;background-size:cover;">
+            <div class="container">
+                <div class="col-md-12" style="margin-top:60px;padding:20px 0px;display:flex;justify-content:center;">
+                    <div class="col-8" style="background-color:#A8A8A8;height:400px;border-radius:10px;">
+
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <!--  -->
+        <div class="container-fluid" style="background-color:#242838;">
+            <div class="container" style="background-color:#2F3549;padding:20px 0px;">
+                <div class="col-md-12 d-flex justify-content-center pt-4" style="border-radius:10px;">
+                    <div style="padding: 20px 0;float:left;border-radius:10px;" class="col-8">
+                        <div class="col-md-6 font-roboto-m p-0" style="float:left;margin-top: -33px;padding-right: 30px !important;">
+                            <div class="d-flex justify-content-center">
+                                <p style="font-size:25px;padding-top:5px;margin-bottom:0px;">
+                                    <span class="font-montserrat-b" id="price" style="color:#fff;font-size:40px;">&#x20B9; 1,997</span> 
+                                    <span class="font-roboto-m" style="color:#C5C5C5;font-size:20px;"><span class="strike" style="display: none;"> <strike><b>&#x20B9; 12,800</b></strike> 97% off</span></span>
+                                </p>
+                            </div>
+                            <div style="padding:0px 10px;">
+                                <a data-toggle="modal" data-target="#razorpay" class="btn-green btn-block caps cursor-pointer" style="padding:10px;background-color:#dc3545;border-radius:10px;color:#fff;font-size:20px;text-align:center;">Buy
+                                    Tickets</a>
+                            </div>
+                            <div class="couponDiv" style="padding:10px;font-size:21px;">
+                                <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable bg-danger" style="padding:15px;border-radius:10px;">
+                                    <p class="font-roboto-l" style="font-size:20px;color:#fff;margin-bottom:0px;text-align:left;">Have a Coupon Code?</p> 
+                                    <div class="couponDiv" style="display:flex;font-size:15px;">
+                                        <input type="text" name="coupon" id="in" class="coupon font-roboto-r" title="Enter coupon" style="border-radius:5px;border:2px solid #dc3545;text-align:center;margin-right:10px;">
+                                        <a onclick="validate()" id="err" class="font-roboto-r btn-green btn-block caps" style="padding:10px;background-color:#dc3545;border:2px solid #FFFFFF;border-radius:5px;color:#fff;font-size:15px;text-align:center;cursor:pointer;">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="applied" style="padding: 10px; display: none;">
+                                <a class="btn-green btn-block caps" style="border-radius:10px;color:#fff;font-size:20px;text-align:left;"><span id="code">EARLYBIRD70</span> Coupon Applied</a>
+                                <div class="position-absolute" style="right:7px;margin-top: -41px;">
+                                    <div style="border-radius: 100px;width: 50px;height: 50px;color: #3c4792;font-size: 10px;" class="d-flex justify-content-center align-items-center cursor-pointer coupon-code-applied-cross">
+                                        <p class="m-0" style="font-size:30px;transform:rotate(40deg);">+</p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-md-6 font-roboto-r" style="padding-left:20px !important;float:left;">
+                            <div class="color-white" style="background-color:#434D6E;margin: -20px;padding: 40px;border-radius:10px;">
+                                <ul style="font-size: 18px;padding: 0 0 0 10px;margin-bottom:0 !important;">
+                                    <li class="mr-0">Start Date: May 15th, 2020, 6 p.m.</li>
+                                    <li class="mr-0">End Date: May 17th, 2020, 8 p.m.</li>
+                                    <li class="mr-0">Lecture timings: 6 p.m. - 8 p.m.</li>
+                                    <li class="mr-0">Venue: Online Event</li>
+                                    <li class="mr-0">Language: Hindi</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="col-8">
+                        <p class="font-montserrat-m m-0 text-uppercase" style="padding:10px;color:#fff;text-align:center;font-size:26px;">description</p>
+                        <div class="link">                        
+                            <p class="font-roboto-r" style="color:#FFF;font-size:20px;text-align:justify;">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            </p>    
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="d-flex justify-content-center">
+                    <div class="col-8">
+                        <p class="font-montserrat-m m-0 pb-0 text-uppercase" style="padding: 30px 0;color:#fff;text-align:center;font-size:26px;">Why choose this course?</p>
+                        <div class="link">
+                            <p class="font-roboto-r" style="color:#FFF;font-size:20px;text-align:justify;padding:15px;">
+                                I've been mentoring a lot of budding musicians regarding how to make money in this industry and there was not even a single course for Indian musicians which I could recommend. <br><br>So, I decided to come up with this course which is -
+                            </p>
+                            <div class="row d-flex pt-3 pl-5">
+                                <div class="col-2">
+                                    <img src="images/tone.svg" alt="">
+                                </div>
+                                <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size: 20px;">
+                                    <em>Totally unique course explaining you how to earn through music</em>
+                                </div>
+                            </div>
+                            <div class="row d-flex pt-3 pl-5">
+                                <div class="col-2" >
+                                    <img src="images/mic.svg" alt="">
+                                </div>
+                                <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size: 20px;">
+                                    <em>Focus towards Indian music industry.</em>
+                                </div>
+                            </div>
+                            <div class="d-flex pt-3 row pl-5">
+                                <div class="col-2">
+                                    <img src="images/music.svg" alt="">
+                                </div>
+                                <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size: 20px;">
+                                    <em>Detailed insights, experience based course not a textbook one</em>
+                                </div>
+                            </div>
+                            <div class="row d-flex pt-3 pl-5">
+                                <div class="col-2">
+                                    <img src="images/mic2.svg" alt="">
+                                </div>
+                                <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size: 20px;">
+                                    <em>Designed keeping Independent (Indie) artists in my mind as well</em>
+                                </div>
+                            </div>
+                            <div class="row d-flex pt-3 pl-5">
+                                <div class="col-2">
+                                    <img src="images/headphone.svg" alt="">
+                                </div>
+                                <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size: 20px;">
+                                    <em>Legalities like profit distribution, royalties</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small mdb-color pt-4">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">        
+                <!-- Footer links -->
+                <div class="row text-center text-md-left mt-5 pb-5">        
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Signup for Email Alert</h6>
+                        <div class="bg-light p-4">
+                            <p>Subscribe for latest articles and resources</p>
+                            <div class="form-group has-feedback">
+                                <input style="position:relative;" class="form-control "  name="email"  type="text"   placeholder="Enter Email" >
+                                <a href="#"><span style="position:absolute;right:50px;top:118px;color:#dc3545;" class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid column -->        
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p>
+                            <a class="color-black" href="#!">MDBootstrap</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">MDWordPress</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">BrandFlow</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Bootstrap Angular</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->        
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                        <p>
+                            <a class="color-black" href="#!">Your Account</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Help</a>
+                        </p>
+                    </div>        
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fa fa-phone mr-3 color-danger"></i> +91 9876543210</p>
+                        <p><i class="fa fa-envelope-open mr-3 color-danger"></i> info@gmail.com</p>
+                        <p><i class="fa fa-map-marker mr-3 color-danger"></i> New York, NY 10012, US</p>
+                    </div>
+                    <!-- Grid column -->        
+                </div>
+                <!-- Footer links -->        
+            </div>  
+            <div class="container-fluid bg-danger"> 
+                <div class="container color-white text-center">        
+                    <!-- Grid row -->
+                    <div class="row d-flex p-3">        
+                        <!-- Grid column -->
+                        <div class="col-md-7 col-lg-8">        
+                            <!--Copyright-->
+                            <p class="m-0 text-center text-md-left">&copy; 2020 Copyright:
+                                <a class="color-white" href="#"> LayerDrops.com</a>
+                            </p>        
+                        </div>
+                        <!-- Grid column -->        
+                            <!-- Grid column -->
+                            <div class="col-md-5 col-lg-4 ml-lg-0">        
+                                <!-- Social buttons -->
+                                <div class="text-center">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-facebook-square"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>        
+                            </div>
+                            <!-- Grid column -->        
+                    </div>
+                    <!-- Grid row -->  
+                </div>     
+            </div>
+            <!-- Footer Links -->        
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <!-- mobile view -->
+    <div class="d-lg-none">
+        <!-- header -->
+        <div class="fixed-top" style="padding: 50px 0px;background-image:url(images/background-pic.png);outline:none;">
+            <header>
+                <div class="position-fixed h-100 w-100"
+                    style="opacity: 1; backdrop-filter: blur(8px); z-index: 16; display: none; top: 0px;" id="drawer">
+                    <div class="container h-100 w-100 pr-0">
+                        <div class="row h-100 w-100 mr-0 position-absolute">
+                            <div class="col-2 d-flex justify-content-end pt-5 pl-0" id="cross"
+                                style="padding-right: 15px !important;">
+                                <div id="mobile-cross">
+                                    <p class="m-0" style="font-size: 30px;color:#fff;">X</p>
+                                </div>
+                            </div>
+                            <div class="col-10 position-relative"
+                                style="background: #0505055c 0% 0% no-repeat padding-box;">
+                                <div class="position-absolute w-100" style="top:35%;">
+                                    <p class="footer-text font-weight-light text-center"
+                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#dc3545;"
+                                        onclick="window.location = '/'">Home</p>
+                                    <p class="footer-text font-weight-light text-center"
+                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
+                                        onclick="window.open('https://www.finstreet.in/about-me/','_blank')">About</p>
+                                    <p class="footer-text font-weight-light text-center"
+                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
+                                        onclick="window.open('https://www.finstreet.in/contact/','_blank')">Contact</p>
+                                    <p class="footer-text font-weight-light text-center"
+                                        style="font-size: 30px;margin-bottom:10px;font-family: europhonic;color:#fff;"
+                                        onclick="window.location = 'user-login'">Login</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-container">
+                    <div id="mobile-navbar">
+                        <div style="position: fixed;right: 20px;margin-top: -26px;z-index:15 !important;" id="open-drawer">
+                            <hr style="width: 40px;height: 4px;background-color: white;margin-top: 10px;margin-bottom: 0px;border-radius: 100px;">
+                            <hr style="width: 30px;height: 4px;background-color: white;margin-top: 10px;margin-bottom: 0px;border-radius: 100px;margin-left: 9px;">                            
+                        </div>
+                        <div class="d-flex position-fixed align-items-center w-100"
+                            style="z-index: 10;margin-top: -30px;margin-left: 15px;">
+                            <a class="navbar-brand header-text color-white" id="mobile-header-logo-text" href="/"> NavBar</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- Page Content -->
+        <div class="container-fluid" style="margin-top:99px;background-image:url(images/background-pic.png);height:260px;background-size:cover;">
+            <div class="container">
+                <div class="col-md-12" style="padding-top:80px !important;padding:20px 0px;display:flex;justify-content:center;">
+                    <div class="col-12" style="background-color:#A8A8A8;height:180px;border-radius:10px;">
+
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <!-- content 1 -->
+        <div class="container d-flex justify-content-center" style="background-color:#2F3549;padding:20px 0px;">
+            <div class="col-10">
+                <div class="d-flex justify-content-center">
+                    <p style="font-size:25px;padding-top:5px;margin-bottom:0px;">
+                        <span class="font-montserrat-b" id="price-mobile" style="color:#fff;font-size:40px;">&#x20B9; 1,997</span> 
+                        <span class="font-roboto-m" style="color:#C5C5C5;font-size:20px;"><span class="strike-mobile"><strike style="display: none;"><b>&#x20B9; 12,800</b></strike> 97% off </span></span>
+                    </p>
+                </div>
+                <div>
+                    <a data-toggle="modal" data-target="#razorpay" class="btn-green btn-block caps cursor-pointer" style="padding:10px;background-color:#dc3545;border-radius:10px;color:#fff;font-size:20px;text-align:center;">Buy
+                        Tickets</a>
+                </div>
+                <div class="color-white mt-3" style="background-color:#434D6E;padding:30px;border-radius:10px;">
+                    <ul class="font-roboto-r" style="font-size:14px;padding:0 0 0 14px;margin-bottom:0 !important;">
+                        <li>Start Date: May 15th, 2020, 6 p.m.</li>
+                        <li>End Date: May 17th, 2020, 8 p.m.</li>
+                        <li>Lecture timings: 6 p.m. - 8 p.m.</li>
+                        <li>Venue: Online Event</li>
+                        <li>Language: Hindi</li>
+                    </ul>
+                </div>
+                <div class="couponDiv mt-3" style="font-size:20px;">
+                    <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" style="padding:15px;background:#dc3545 0% 0% no-repeat padding-box;border-radius:10px;">
+                        <p class="font-roboto-l" style="font-size:20px;color:#fff;margin-bottom:0px;text-align:left;">Have a Coupon Code?</p> 
+                        <div class="couponDiv" style="display:flex;font-size:15px;">
+                            <input type="text" name="coupon-mobile" id="in-mobile" class="coupon font-roboto-r" title="Enter coupon" style="border-radius:5px;border:2px solid #dc3545;text-align:center;margin-right:10px;">
+                            <a onclick="validate()" id="err-mobile" class="font-roboto-r btn-green btn-block caps" style="padding:10px;background-color:#dc3545;border:2px solid #FFFFFF;border-radius:5px;color:#fff;font-size:15px;text-align:center;cursor:pointer;">Apply</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="applied-mobile" style="padding: 10px; display: none;">
+                    <a class="btn-green btn-block caps" style="border-radius:10px;color: #fff;font-size:20px;text-align:left;"><span id="code">EARLYBIRD70</span> Coupon Applied</a>
+                    <div class="position-absolute" style="right:7px;margin-top: -41px;">
+                        <div style="border-radius: 100px;width: 50px;height: 50px;color: #3c4792;font-size: 10px;" class="d-flex justify-content-center align-items-center cursor-pointer coupon-code-applied-cross-mobile">
+                            <p class="m-0" style="font-size:30px;transform:rotate(40deg);">+</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center" style="background-color:#2F3549;padding:20px 0px;margin-top:-2px;">
+            <div class="col-10">
+                <p class="font-montserrat-m m-0 text-uppercase" style="padding:10px;color:#fff;text-align:center;font-size:20px;">description</p>
+                <div class="link">                        
+                    <p class="font-roboto-r" style="color:#FFF;font-size:16px;text-align:justify;">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    </p>    
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center" style="background-color:#2F3549;padding:20px 0px;margin-top:-2px;">
+            <div class="col-10">
+                <p class="font-montserrat-m m-0 pb-0 text-uppercase" style="padding: 30px 0;color:#fff;text-align:center;font-size:20px;">Why choose this course?</p>
+                <div class="link">
+                    <p class="font-roboto-r pt-2" style="color:#FFF;font-size:16px;text-align:justify;">
+                        I've been mentoring a lot of budding musicians regarding how to make money in this industry and there was not even a single course for Indian musicians which I could recommend. <br><br>So, I decided to come up with this course which is -
+                    </p>
+                    <div class="row d-flex pt-3">
+                        <div class="col-2">
+                            <img src="images/tone.svg" alt="">
+                        </div>
+                        <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size:16px;">
+                            <em>Totally unique course explaining you how to earn through music</em>
+                        </div>
+                    </div>
+                    <div class="row d-flex pt-3">
+                        <div class="col-2" >
+                            <img src="images/mic.svg" alt="">
+                        </div>
+                        <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size: 16px;">
+                            <em>Focus towards Indian music industry.</em>
+                        </div>
+                    </div>
+                    <div class="row d-flex pt-3">
+                        <div class="col-2">
+                            <img src="images/music.svg" alt="">
+                        </div>
+                        <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size:16px;">
+                            <em>Detailed insights, experience based course not a textbook one</em>
+                        </div>
+                    </div>
+                    <div class="row d-flex pt-3">
+                        <div class="col-2">
+                            <img src="images/mic2.svg" alt="">
+                        </div>
+                        <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size:16px;">
+                            <em>Designed keeping Independent (Indie) artists in my mind as well</em>
+                        </div>
+                    </div>
+                    <div class="row d-flex pt-3">
+                        <div class="col-2">
+                            <img src="images/headphone.svg" alt="">
+                        </div>
+                        <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size:16px;">
+                            <em>Legalities like profit distribution, royalties</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small mdb-color pt-4">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">        
+                <!-- Footer links -->
+                <div class="row text-center text-md-left mt-5 pb-5">        
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Signup for Email Alert</h6>
+                        <div class="bg-light p-4">
+                            <p>Subscribe for latest articles and resources</p>
+                            <div class="form-group has-feedback">
+                                <input style="position:relative;" class="form-control "  name="email"  type="text"   placeholder="Enter Email" >
+                                <a href="#"><span style="position:absolute;right:50px;top:118px;color:#dc3545;" class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid column -->        
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p>
+                            <a class="color-black" href="#!">MDBootstrap</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">MDWordPress</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">BrandFlow</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Bootstrap Angular</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->        
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                        <p>
+                            <a class="color-black" href="#!">Your Account</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Help</a>
+                        </p>
+                    </div>        
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fa fa-phone mr-3 color-danger"></i> +91 9876543210</p>
+                        <p><i class="fa fa-envelope-open mr-3 color-danger"></i> info@gmail.com</p>
+                        <p><i class="fa fa-map-marker mr-3 color-danger"></i> New York, NY 10012, US</p>
+                    </div>
+                    <!-- Grid column -->        
+                </div>
+                <!-- Footer links -->        
+            </div>  
+            <div class="container-fluid bg-danger"> 
+                <div class="container color-white text-center">        
+                    <!-- Grid row -->
+                    <div class="row d-flex p-3">        
+                        <!-- Grid column -->
+                        <div class="col-md-7 col-lg-8">        
+                            <!--Copyright-->
+                            <p class="m-0 text-center text-md-left">&copy; 2020 Copyright:
+                                <a class="color-white" href="#"> LayerDrops.com</a>
+                            </p>        
+                        </div>
+                        <!-- Grid column -->        
+                            <!-- Grid column -->
+                            <div class="col-md-5 col-lg-4 ml-lg-0">        
+                                <!-- Social buttons -->
+                                <div class="mb-2 mt-2 text-center">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-facebook-square"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>        
+                            </div>
+                            <!-- Grid column -->        
+                    </div>
+                    <!-- Grid row -->  
+                </div>     
+            </div>
+            <!-- Footer Links -->        
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- razorpay popup -->
+    <div class="modal fade" id="razorpay" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" style="max-width:920px;">
+            <div class="modal-content">
+                <div class="text-center">
+                    <div style="margin-top:37px;">
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div style="margin-top:10px;">
+                        <h2 class="font-roboto-b">BILLING DETAILS</h2>
+                    </div>
+                </div>
+                <div style="border-radius:10px;top:5px;display:none;" class="order-success bg-white shadow-buy-now-button-1 position-relative">
+                    <h2 class="font-roboto-b m-0 mb-2 text-capitalize text-center"
+                        style="font-size: 40px;padding-top:30px;">User Already Exist</h2>
+                    <h2 class="font-poppins-regular m-0 mb-2 text-center" style="font-size:20px;padding:10px;">Your Already paid for this Course</h2>
+                    <div class="px-5">
+                        <hr>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <p class="para font-poppins-regular"
+                                style="text-align:center;padding-top:10px;padding-bottom:20px;margin:1px auto !important;">
+                                Please used your credentials for login, Click on given login button
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="padding-bottom: 60px;">
+                            <a class="cursor-pointer text-uppercase font-roboto-b shadow-buy-now-button buy-now-button backToShop"
+                                onclick="window.location = 'user-login'">Login Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-form modal-body">
+                    <div class="form formStyle needs-validation" method="POST">
+                        <div class="form-froup">
+                            <label for="InputYourOrder">Your Order Details</label>
+                            <table
+                                style="border:1px solid rgba(0, 0, 0, 0.1);border-right:none;margin:0px 0px 40px 0px;text-align:left;width:100%;border-collapse:separate;overflow:hidden;">
+                                <thead>
+                                    <tr>
+                                        <th style="background:#f5f5f5;border-color:#eee;border-width:1px 1px 0 0;
+                                        border-style: solid;color:#4c5462;vertical-align:middle;" class="product-name">
+                                            Product</th>
+                                        <th style="background:#f5f5f5;border-color:#eee;border-width:1px 1px 0 0;
+                                        border-style: solid;color:#4c5462;vertical-align:middle;"
+                                            class="product-total">Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="cart_item">
+                                        <td id="buyProductName" class="product-name up text-uppercase">FINCHORDS
+                                        </td>
+                                        <td class="product-total">
+                                            <strong>
+                                                <span>&#8377;<span id="buypriceDollar">1997</span></span>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="cart-subtotal">
+                                        <th>Subtotal</th>
+                                        <td><strong>
+                                                <span>&#8377;<span class="modalSubtotal">1997</span></span>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart-subtotal">
+                                        <th>Discount(%)</th>
+                                        <td><strong>
+                                                <span><span id="discount">0</span>%</span>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr class="order-total">
+                                        <th>Total</th>
+                                        <td><strong>
+                                                <span>&#8377;<span name="amount" class="modaltotal">1997</span></span>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="formInput">
+                            <div class="form-group">
+                                <label for="Name">Name</label>
+                                <input type="text" class="form-control" name="name" id="name" aria-describedby="name"
+                                    placeholder="Enter Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="InputPhone">Phone Number</label>
+                                <input type="text" class="form-control" name="phone" id="phone"
+                                    placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="InputEmail">E-mail</label>
+                                <input type="email" class="form-control" name="email" id="email"
+                                    aria-describedby="email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" id="password"
+                                    aria-describedby="name" placeholder="Enter Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password">Confirm Password</label>
+                                <input type="password" class="form-control" name="confirm_password"
+                                    id="confirm_password" aria-describedby="name" placeholder="Confirm Password">
+                            </div>
+
+
+                        </div>
+                        <div class="formInput1">
+                            <div class="form-group">
+                                <label for="InputAddress">Address</label>
+                                <input type="text" class="form-control" name="address" id="address"
+                                    aria-describedby="address" placeholder="Enter Address">
+                            </div>
+                            <div class="form-group">
+                                <label for="InputState">State</label>
+                                <input type="text" class="form-control" name="state" id="state" aria-describedby="state"
+                                    placeholder="Enter State">
+                            </div>
+                            <div class="form-group">
+                                <label for="Inputpostcode">Postcode</label>
+                                <input type="text" class="form-control" name="postcode" id="postcode"
+                                    aria-describedby="postcode" placeholder="Enter Postcode">
+                            </div>
+                            <div class="form-group">
+                                <label for="Country">Country</label>
+                                <input type="text" class="form-control" name="country" id="country"
+                                    placeholder="Country">
+                            </div>
+                            <div class="form-group" style="margin-top:4px;">
+                                <label for="other_details">Additional Details</label>
+                                <textarea class="form-control" name="other_details" id="other_details"
+                                    rows="3"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <!-- <div style="padding-left: 25px;">
+                            <input class="form-check-input" type="checkbox" value="" id="chkterms" required>
+                            <label class="form-check-label" for="chkterms">
+                            Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
+                            </label>
+                        </div> -->
+
+
+                        <button type="submit" id="razorpaycheckout" class="btn btn-primary buttonStyle mb-5">Place
+                            Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="js/custom-checkout.js"></script>
+</body>
+
+</html>

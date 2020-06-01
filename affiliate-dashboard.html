@@ -1,0 +1,2046 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150643411-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-150643411-2');
+    </script> -->
+
+
+    <!-- Google Tag Manager -->
+    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PFRW8HP');</script> -->
+        <!-- End Google Tag Manager -->
+
+    <title>Affiliate Dashboard | Finstreet | India's 1st ever Financial Freedom Coach</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="icon" href="images/cropped-Fin-270x270.jpg"> -->
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+    <!-- Facebook Pixel Code -->
+    <!-- <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2925272084236286');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2925272084236286&ev=PageView&noscript=1"
+  /></noscript> -->
+  <!-- End Facebook Pixel Code -->
+
+  <!-- <style>
+    .carousel-wrap {
+        margin: 0 auto;
+        padding: 0 5%;
+        width: 95%;
+        position: relative;
+    }
+
+    /* fix blank or flashing items on carousel */
+    .owl-carousel .item {
+        position: relative;
+        z-index: 100; 
+        -webkit-backface-visibility: hidden; 
+    }
+
+    /* end fix */
+    .owl-nav > div {
+        margin-top: -26px;
+        position: absolute;
+        top: 50%;
+        color: #cdcbcd;
+    }
+
+    .owl-nav i {
+        font-size: 52px;
+    }
+
+    .owl-nav .owl-prev {
+        left: -30px;
+    }
+
+    .owl-nav .owl-next {
+        right: -30px;
+    }
+  </style> -->
+    
+    
+</head>
+
+<body>
+    
+    <!-- Google Tag Manager (noscript) -->
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFRW8HP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="d-none d-lg-block">
+        <!-- Navigation -->
+        <div style="padding:20px 0px;outline:none;background-color:#17191f;">
+            <nav class="navbar navbar-expand-lg navbar-dark static-top">
+                <div class="container">
+                    <a class="navbar-brand" href="/">LOGO</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto font-roboto-b" style="font-size: 18px;font-weight:bold;">
+                            
+                            <li class="nav-item active">
+                                <a class="nav-link" href="login">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- page content -->
+        <div class="container-fluid" style="background-color:#242838;">
+            <div class="container color-white" style="background-color:#2F3549;padding:20px 0px;"> 
+            <h2 class="pl-3">Hello <span id="name-desktop"></span></h2>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-4">
+                        <p class="text-muted m-0 text-center mb-3">Click the button below to transfer money to your account</p>
+                        <button type="button" class="btn btn-primary w-100 font-weight-bold" style="font-size: 20px;" data-toggle="modal" data-target="#exampleModal">Redeem Now</button>
+                    </div>
+                </div>
+                <div class="row p-2 mt-4">
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-money text-blue" style="font-size: 50px;"></i>
+                                    </div>
+                                    <div class="col-8 d-flex justify-content-center align-items-center">
+                                        <div class="w-100">
+                                            <p class="text-muted m-0">Total Income</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="total-income-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-money text-blue" style="font-size: 50px;"></i>
+                                    </div>
+                                    <div class="col-8 d-flex justify-content-center align-items-center">
+                                        <div class="w-100">
+                                            <p class="text-muted m-0">Total Redeemed</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="total-red-amount-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-hand-pointer-o text-blue" style="font-size: 50px;"></i>
+                                    </div>
+                                    <div class="col-8 d-flex justify-content-center align-items-center">
+                                        <div class="w-100">
+                                            <p class="text-muted m-0">Total clicks</p>
+                                            <h3 class="m-0" id="total-clicks-desktop">0</h3>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-vcard-o text-blue" style="font-size: 50px;"></i>
+                                    </div>
+                                    <div class="col-8 d-flex justify-content-center align-items-center">
+                                        <div class="w-100">
+                                            <p class="text-muted m-0">Visitors</p>
+                                            <h3 class="m-0" id="unique-visitors-desktop">0</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <!-- content 1 -->
+                <div class="container">
+                    <div class="row p-2">
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 d-flex justify-content-center align-items-center">
+                                            <i class="fa fa-stack-overflow text-blue" style="font-size: 50px;"></i>
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-center align-items-center">
+                                            <div class="w-100">
+                                                <p class="text-muted m-0">Total Payments</p>
+                                                <h3 class="m-0" id="total-payments-desktop">0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 d-flex justify-content-center align-items-center">
+                                            <i class="fa fa-money text-blue" style="font-size: 50px;"></i>
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-center align-items-center">
+                                            <div class="w-100">
+                                                <p class="text-muted m-0">Redeemable Amount</p>
+                                                <h3 class="m-0"><span>&#8377; </span><span class="redeemable-amount"> 0</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 d-flex justify-content-center align-items-center">
+                                            <img src="icons/medal.svg" style="font-size:50px;width:50px;height:50px;">
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-center align-items-center">
+                                            <div class="w-100">
+                                                <p class="text-muted m-0">Level</p>
+                                                <h3 class="m-0 level">1</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- achievement -->
+            <div class="container-fluid bg-blue mt-4 d-none">
+                <h2 class="pt-3" style="display:flex;justify-content:center;color:#fff;">Achievement</h2>
+                <div class="row p-2">
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/1.png" style="width: 140px;">                                    
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p id="reward" class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;"> 1 Free <br>Event</span> Ticket</p>
+                                            <button type="button" onclick="validate(1)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon1"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/2.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p id="reward" class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;">&#8377; 500</span></p>
+                                            <button type="button" onclick="validate(2)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon2"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                    </div> 
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/3.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:600;"> Finstreet Stationary </span></p>
+                                            <button type="button" onclick="validate(3)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon3"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/4.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 p-0 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Personal Career Guidance with Mr.Bandhul Bansal </span></p>
+                                            <button type="button" onclick="validate(4)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon4"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                    </div>          
+                </div>
+                <div class="row p-2">
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/5.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;"> Special Premium instreet Kit </span></p>
+                                            <button type="button" onclick="validate(5)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon5"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
+                    </div> 
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/6.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> &#8377; 1500 </span></p>
+                                            <button type="button" onclick="validate(6)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon6"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/7.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 p-0 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Paid Internship Opportunity with PPO </span></p>
+                                            <button type="button" onclick="validate(7)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon7"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/8.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Official Internship Cerificate</span></p>
+                                            <button type="button" onclick="validate(8)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon8"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
+                    </div>            
+                </div>
+                <div class="container">
+                    <div class="row p-2">
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                            <img src="icons/9.png" style="width: 140px;">                                   
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center align-items-center">
+                                            <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                                <p class="text-muted m-0">New Achievement!</p>
+                                                <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> Bluetooth Speaker </span></p>
+                                                <button type="button" onclick="validate(9)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon9"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                        </div>
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                            <img src="icons/10.png" style="width: 140px;">                                   
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center align-items-center">
+                                            <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                                <p class="text-muted m-0">New Achievement!</p>
+                                                <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> &#8377; 5000 </span></p>
+                                                <button type="button" onclick="validate(10)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon10"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                        </div>
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                            <img src="icons/11.png" style="width: 140px;">                                   
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center align-items-center">
+                                            <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                                <p class="text-muted m-0">New Achievement!</p>
+                                                <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;"> Investment Pitch Opportunity </span></p>
+                                                <button type="button" onclick="validate(11)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon11"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- sales overview -->
+            <div class="container-fluid">
+                <div class="row p-2 mt-4">
+                    <div class="col-md-8 p-3">
+                        <div class="bg-white w-100">
+                            <h4 class="p-3">Sales Overview</h4>
+                            <div class="container-fluid" style="background-color: #3F51B5;">
+                                <div class="row">
+                                    <div class="col-md-3 d-flex justify-content-center align-items-center" style="background-color: #283593;">
+                                        <div style="text-align: center;" class="text-white py-2">
+                                            <p class="text-white m-0">Total</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="total-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                        <div style="text-align: center;" class="text-white py-2">
+                                            <p class="text-white m-0">This Month</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="month-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                        <div style="text-align: center;" class="text-white py-2">
+                                            <p class="text-white m-0">This Week</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="week-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                        <div style="text-align: center;" class="text-white py-2">
+                                            <p class="text-white m-0">Yesterday</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="yesterday-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                        <div style="text-align: center;" class="text-white py-2">
+                                            <p class="text-white m-0">Today</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="today-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="bg-white">
+                                    <h4 class="p-3 m-0">Referral Link</h4>
+                                    <hr class="mt-0">
+                                    <p class="text-muted px-3 m-0">Share this affiliate link within your circle to avail benefits.</p>
+                                    <div  class="w-100">
+                                        <a  id="referral-link-desktop" href="https://material.io/design/color/#tools-for-picking-colors" class="mx-3 mb-3">https://material.io/design/color/#tools-for-picking-colors</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- <div class="col-6">
+                                <div class="bg-white">
+                                    <h4 class="p-3 m-0">Creative link</h4>
+                                    
+                                    <hr class="mt-0">
+                                    <p class="text-muted px-3 m-0">If you need creative to popularize in your circle use the link below</p>
+                                    <div class="w-100 d-flex justify-content-center align-items-center">
+                                        <a href="https://material.io/design/color/#tools-for-picking-colors" class="mx-3 mb-3">https://material.io/design/color/#tools-for-picking-colors</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- Payment Overview -->
+                    <div class="col-md-4 p-3">
+                        <div class="bg-white w-100">
+                            <h4 class="p-3">Payment Overview</h4>
+                            <hr>
+                            <div class="container">
+                                <p class="p-3" id="no-payments-desktop">No payments to display</p>
+                                <div id="orders-desktop"></div>
+                                <!-- <div class="row">
+                                    <div class="col-8 pl-5">
+                                        Sachin
+                                    </div>
+                                    <div class="col-4 pr-5 text-right">
+                                        <span>&#8377;</span>500
+                                    </div>
+                                </div>
+                                <hr> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Redeem Amount</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                                        aria-controls="nav-home" aria-selected="true"><img src="images/gpay.png" style="width: 50px;"></a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                                        aria-controls="nav-profile" aria-selected="false"><img src="images/phonepay.png" style="width: 80px;"></a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                                        aria-controls="nav-contact" aria-selected="false"><img src="images/Paytm_logo.png" style="width: 80px;"></a>
+                                    <a class="nav-item nav-link" id="nav-account-tab" data-toggle="tab" href="#nav-account" role="tab"
+                                    aria-controls="nav-account" aria-selected="false">Account</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active p-4" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <div id="gpay-container">
+                                        <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                        <h4 class="w-100 text-center text-muted mb-3"> Enter Your 10 digit GPay Number</h4>
+                                        <input type="number" id="gpay-number" name="gpay-number" class="form-control mb-3 text-center" >
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-primary" id="gpay-submit">Submit</button>
+                                        </div>
+                                    </div>
+
+                                    <div id="gpay-success" style="display: none;">
+                                        <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="tab-pane fade p-4" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <div id="phonepay-container">
+                                        <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                        <h4 class="w-100 text-center text-muted mb-3"> Enter Your 10 digit Phonepay Number</h4>
+                                        <input type="number" id="phonepay-number" name="phonepay-number" class="form-control mb-3 text-center" >
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-primary" id="phonepay-submit">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div id="phonepay-success" style="display: none;">
+                                        <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade p-4" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                    <div id="paytm-container">
+                                        <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                        <h4 class="w-100 text-center text-muted mb-3"> Enter Your 10 digit Paytm Number</h4>
+                                        <input type="number" id="paytm-number" name="paytm-number" class="form-control mb-3 text-center" >
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-primary" id="paytm-submit">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div id="paytm-success" style="display: none;">
+                                        <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade p-4" id="nav-account" role="tabpanel" aria-labelledby="nav-account-tab">
+                                    <div id="account-container">
+                                        <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                        <h4 class="w-100 text-center text-muted mb-3"> Enter Your Account Details</h4>
+                                        <input type="text" id="account-name" name="account-name" class="form-control mb-3 text-center" placeholder="Name On Account">
+                                        <input type="number" id="account-number" name="account-number" class="form-control mb-3 text-center" placeholder="Account Number">
+                                        <input type="text" id="account-ifsc" name="account-ifsc" class="form-control mb-3 text-center" placeholder="IFSC Code">
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-primary" id="account-submit">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div id="account-success" style="display: none;">
+                                        <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-lg-none">
+        <!-- Navigation -->
+        <div class="fixed-top" style="padding:80px 0px;background-color:#00abc9;outline:none;">
+            <header>
+                <div class="position-fixed h-100 w-100" style="opacity:1;backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);z-index:16;display:none;top:0px" id="drawer">
+                    <div class="container h-100 w-100 pr-0">
+                        <div class="row h-100 w-100 mr-0 position-absolute">
+                            <div class="col-2 d-flex justify-content-end pt-5 pl-0" id="cross" style="padding-right:20px !important;">
+                                <div id="mobile-cross">
+                                    <p class="m-0" style="font-size:50px;color:#fff;">X</p>
+                                </div>
+                            </div>
+                            <div class="col-10 position-relative" style="background: #00abc9 0% 0% no-repeat padding-box;">
+                                <div class="position-absolute w-100" style="top:10%;">
+                                    
+                                    <p class="footer-text font-weight-light text-center" style="font-size:50px;margin-bottom:10px; font-family: europhonic;color:#fff;" onclick="window.location = 'login'">Logout</p>
+                                </div>                          
+                            </div>                        
+                        </div>                
+                    </div>                
+                </div>        
+                <div class="nav-container">
+                    <div id="mobile-navbar"></div>
+                    <div style="position: fixed; z-index: 10; right:70px; margin-top:-38px; z-index:15 !important;" id="open-drawer">
+                        <hr style="width: 50px;height: 4px;background-color: white;margin-top: 10px;margin-bottom: 0px;border-radius: 100px;">
+                        <hr style="width: 50px;height: 4px;background-color: white;margin-top: 15px;margin-bottom: 0px;border-radius: 100px;">
+                        <hr style="width: 50px;height: 4px;background-color: white;margin-top: 15px;margin-bottom: 0px;border-radius: 100px;">
+                    </div>
+                    <div class="d-flex position-fixed align-items-center w-100" style="z-index: 10; margin-top:-45px; margin-left:32px;">
+                        <a class="navbar-brand" href="/">LOGO</a>
+                    </div>
+                </div>            
+            </header>
+        </div>
+
+        <!-- page content -->
+        <div class="container-fluid" style="margin-top: 250px;">
+            <h2 class="pl-3 pb-3" style="font-size: 3rem;">Hello <span id="name-mobile"></span></h2>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-8">
+                    <p class="text-muted m-0 text-center mb-3" style="font-size: 2rem;">Click the button below to transfer money to your account</p>
+                    <button type="button" class="btn btn-primary w-100 font-weight-bold" style="font-size: 3rem;" data-toggle="modal" data-target="#exampleModal-mobile">Redeem Now</button>
+                </div>
+            </div>
+            <div class="row p-2 mt-4">
+                <div class="col-6 p-3">
+                    <div class="bg-white w-100 p-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="fa fa-money text-blue" style="font-size: 4rem;"></i>
+                                </div>
+                                <div class="col-8 d-flex justify-content-center align-items-center">
+                                    <div class="w-100">
+                                        <p class="text-muted m-0" style="font-size: 2rem;">Total Income</p>
+                                        <h3 class="m-0" style="font-size: 3rem;"><span>&#8377;</span><span id="total-income-mobile">0</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-6 p-3">
+                    <div class="bg-white w-100 p-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="fa fa-money text-blue" style="font-size: 4rem;"></i>
+                                </div>
+                                <div class="col-8 d-flex justify-content-center align-items-center">
+                                    <div class="w-100">
+                                        <p class="text-muted m-0" style="font-size: 2rem;">Total Redeemed</p>
+                                        <h3 class="m-0" style="font-size: 3rem;"><span>&#8377;</span><span id="total-red-amount-mobile">0</span></h3>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-2 mt-4">
+                <div class="col-6 p-3">
+                    <div class="bg-white w-100 p-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="fa fa-hand-pointer-o text-blue" style="font-size: 4rem;"></i>
+                                </div>
+                                <div class="col-8 d-flex justify-content-center align-items-center">
+                                    <div class="w-100">
+                                        <p class="text-muted m-0" style="font-size: 2rem;">Total clicks</p>
+                                        <h3 class="m-0" style="font-size: 3rem;" id="total-clicks-mobile">0</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-3">
+                    <div class="bg-white w-100 p-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="fa fa-vcard-o text-blue" style="font-size: 4rem;"></i>
+                                </div>
+                                <div class="col-8 d-flex justify-content-center align-items-center">
+                                    <div class="w-100">
+                                        <p class="text-muted m-0" style="font-size: 2rem;">Visitors</p>
+                                        <h3 class="m-0" style="font-size: 3rem;" id="unique-visitors-mobile">0</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-2 mt-4">
+                <div class="col-6 p-3">
+                    <div class="bg-white w-100 p-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="fa fa-stack-overflow text-blue" style="font-size: 4rem;"></i>
+                                </div>
+                                <div class="col-8 d-flex justify-content-center align-items-center">
+                                    <div class="w-100">
+                                        <p class="text-muted m-0" style="font-size: 2rem;">Total Payments </p>
+                                        <h3 class="m-0" style="font-size: 3rem;" id="total-payments-mobile">0</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-3">
+                    <div class="bg-white w-100 p-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <i class="fa fa-money text-blue" style="font-size: 4rem;"></i>
+                                </div>
+                                <div class="col-8 d-flex justify-content-center align-items-center" style="padding:0px;">
+                                    <div class="w-100">
+                                        <p class="text-muted m-0" style="font-size:30px;font-weight:400;">Redeemable Amount</p>
+                                        <h3 class="m-0" style="font-size: 3rem;"><span>&#8377;  </span><span class="redeemable-amount"> 0</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="row p-2 mt-4">
+                <div class="col-6 p-3">
+                    <div class="bg-white w-100 p-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <img src="icons/medal.svg" style="font-size:50px;width:68px;height:64px;">   
+                                </div>
+                                <div class="col-8 d-flex justify-content-center align-items-center">
+                                    <div class="w-100">
+                                        <p class="text-muted m-0" style="font-size: 2rem;">Level</p>
+                                        <h3 class="m-0 level" style="font-size: 3rem;">1</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <!-- achievement -->
+        <div class="container-fluid bg-blue mt-4 d-none">
+            <h1 class="pt-3" style="display:flex;justify-content:center;color:#fff;font-size:3rem;">Achievement</h1>
+            <div class="row p-2">
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/1.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;"> 1 Free Event </span>Ticket</p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(1)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon1"  style="opacity:0.8;background-color:#000;height:394px;margin-top:-394px;border-radius:12px;"></div>
+                </div>
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/2.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">&#8377; 500</span></p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(2)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon2"  style="opacity:0.8;background-color:#000;height:394px;margin-top:-394px;border-radius:12px;"></div>
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/3.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> Finstreet Stationary </span></p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(3)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon3"  style="opacity:0.8;background-color:#000;height:434px;margin-top:-434px;border-radius:12px;"></div>
+                </div>
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/4.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex p-0 justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Personal Career Guidance with Mr.Bandhul Bansal</span></p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(4)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon4"  style="opacity:0.8;background-color:#000;height:434px;margin-top:-434px;border-radius:12px;"></div>
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/5.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Special Premium Finstreet Kit </span></p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(5)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon5"  style="opacity:0.8;background-color:#000;height:433px;margin-top:-433px;border-radius:12px;"></div>
+                </div>
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/6.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;">&#8377;  1500 </span></p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(6)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon6"  style="opacity:0.8;background-color:#000;height:433px;margin-top:-433px;border-radius:12px;"></div>
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/7.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Paid Internship Opportunity with PPO</span></p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(7)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon7"  style="opacity:0.8;background-color:#000;height:434px;margin-top:-434px;border-radius:12px;"></div>
+                </div>
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/8.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Official Internship Cerificate</span></p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(8)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon8"  style="opacity:0.8;background-color:#000;height:434px;margin-top:-434px;border-radius:12px;"></div>
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/9.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned<br><span style="color:#b0a740;font-weight:bold;">Bluetooth Speaker</span></p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(9)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon9"  style="opacity:0.8;background-color:#000;height:433px;margin-top:-433px;border-radius:12px;"></div>
+                </div>
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/10.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> &#8377; 5000 </span></p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(10)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon10"  style="opacity:0.8;background-color:#000;height:433px;margin-top:-433px;border-radius:12px;"></div>
+                </div>
+            </div>  
+            <div class="row p-2 pb-4">
+                <div class="col-6 pt-3">
+                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                    <img src="icons/11.png" style="width: 140px;">                                   
+                                </div>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:26px;">
+                                        <p class="text-muted m-0">New Achievement!</p>
+                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Investment Pitch Opportunity</span></p>
+                                        <button type="button" class="claim-button-mobile btn btn-primary w-100 font-weight-bold" style="font-size: 2rem;" onclick="validate(11)">Redeem Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon11"  style="opacity:0.8;background-color:#000;height:433px;margin-top:-433px;border-radius:12px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <!-- sales overview -->
+            <div class="row p-2 mt-4">
+                <div class="col-md-12 p-3">
+                    <div class="bg-white w-100">
+                        <h4 class="p-3" style="font-size: 3rem">Sales Overview</h4>
+                        <div class="container-fluid" style="background-color: #3F51B5;">
+                            <div class="row">
+                                <div class="col-md-3 d-flex justify-content-center align-items-center" style="background-color: #283593;">
+                                    <div style="text-align: center;" class="text-white py-4">
+                                        <p class="text-white m-0" style="font-size: 2rem">Total</p>
+                                        <h3 class="m-0" style="font-size: 3rem"><span>&#8377;</span><span id="total-mobile">0</span></h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                    <div style="text-align: center;" class="text-white py-2">
+                                        <p class="text-white m-0" style="font-size: 2rem">Month</p>
+                                        <h3 class="m-0" style="font-size: 3rem"><span>&#8377;</span><span id="month-mobile">0</span></h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                    <div style="text-align: center;" class="text-white py-2">
+                                        <p class="text-white m-0" style="font-size: 2rem">Week</p>
+                                        <h3 class="m-0" style="font-size: 3rem"><span>&#8377;</span><span id="week-mobile">0</span></h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                    <div style="text-align: center;" class="text-white py-2">
+                                        <p class="text-white m-0" style="font-size: 2rem">Yesterday</p>
+                                        <h3 class="m-0" style="font-size: 3rem"><span>&#8377;</span><span id="yesterday-mobile">0</span></h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                    <div style="text-align: center;" class="text-white py-2">
+                                        <p class="text-white m-0" style="font-size: 2rem">Today</p>
+                                        <h3 class="m-0" style="font-size: 3rem"><span>&#8377;</span><span id="today-mobile">0</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="bg-white pb-4">
+                                <h4 class="p-3 m-0" style="font-size: 3rem">Referral Link</h4>
+                                <hr class="mt-0">
+                                <p class="text-muted px-3 m-0" style="font-size: 2rem">Share this affiliate link within your circle to avail benefits.</p>
+                                <div class="w-100 mx-3 pb-3" style="font-size: 2rem; word-wrap: break-word;">
+                                    <a id="referral-link-mobile" href="https://material.io/design/color/#tools-for-picking-colors" class="" style="word-wrap: break-word;">https://material.io/design/color/#tools-for-picking-colors</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <!-- <div class="bg-white pb-4">
+                                <h4 class="p-3 m-0" style="font-size: 3rem">Creative link</h4>
+                                
+                                <hr class="mt-0">
+                                <p class="text-muted px-3 m-0" style="font-size: 2rem">If you need creative to popularize in your circle use the link below</p>
+                                <div class="w-100" style="font-size: 2rem">
+                                    <a href="https://material.io/design/color/#tools-for-picking-colors" class="mx-3 mb-3">https://material.io/design/color/#tools-for-picking-colors</a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Payment Overview -->
+                <div class="col-md-12 p-3">
+                    <div class="bg-white w-100 pb-3">
+                        <h4 class="p-3" style="font-size: 3rem">Payment Overview</h4>
+                        <hr class="mt-0">
+                        <div class="container">
+                            <p class="p-3" id="no-payments-mobile" style="font-size: 2rem">No payments to display</p>
+                            <div id="orders-mobile"></div>
+                            <!-- <div class="row">
+                                <div class="col-8" style="font-size: 2rem">
+                                    Sachin
+                                </div>
+                                <div class="col-4 text-right" style="font-size: 2rem">
+                                    <span>&#8377;</span>500
+                                </div>
+                            </div>
+                            <hr> -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal-mobile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document" style="margin-left: 100px; margin-right: 100px; max-width: 100%;">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel-mobile" style="font-size: 3rem;">Redeem Amount</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 3rem;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab-mobile" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab-mobile" data-toggle="tab" href="#nav-home-mobile" role="tab"
+                                    aria-controls="nav-home" aria-selected="true"><img src="images/gpay.png" style="width: 120px;"></a>
+                                <a class="nav-item nav-link" id="nav-profile-tab-mobile" data-toggle="tab" href="#nav-profile-mobile" role="tab"
+                                    aria-controls="nav-profile" aria-selected="false"><img src="images/phonepay.png" style="width: 150px;"></a>
+                                <a class="nav-item nav-link" id="nav-contact-tab-mobile" data-toggle="tab" href="#nav-contact-mobile" role="tab"
+                                    aria-controls="nav-contact" aria-selected="false"><img src="images/Paytm_logo.png" style="width: 150px;"></a>
+                                <a class="nav-item nav-link" id="nav-account-tab-mobile" data-toggle="tab" href="#nav-account-mobile" role="tab"
+                                aria-controls="nav-account" aria-selected="false" style="font-size: 2.5rem;">Account</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent-mobile">
+                            <div class="tab-pane fade show active p-4" id="nav-home-mobile" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div id="gpay-container-mobile">
+                                    <p class="w-100 text-center text-muted mb-3" style="font-size: 2rem;">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                    <h4 class="w-100 text-center text-muted mb-3" style="font-size: 2.5rem;"> Enter Your 10 digit GPay Number</h4>
+                                    <input type="number" id="gpay-number-mobile" name="gpay-number" class="form-control mb-3 text-center" style="font-size: 2rem;">
+                                    <div class="w-100 d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-primary" id="gpay-submit-mobile" style="font-size: 2rem;">Submit</button>
+                                    </div>
+                                </div>
+
+                                <div id="gpay-success-mobile" style="display: none;">
+                                    <h4 class="w-100 text-center text-muted mb-3" style="font-size: 2.5rem;">Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="tab-pane fade p-4" id="nav-profile-mobile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div id="phonepay-container-mobile">
+                                    <p class="w-100 text-center text-muted mb-3" style="font-size: 2rem;">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                    <h4 class="w-100 text-center text-muted mb-3" style="font-size: 2.5rem;"> Enter Your 10 digit Phonepay Number</h4>
+                                    <input type="number" id="phonepay-number-mobile" name="phonepay-number" class="form-control mb-3 text-center" style="font-size: 2rem;" >
+                                    <div class="w-100 d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-primary" id="phonepay-submit-mobile" style="font-size: 2rem;">Submit</button>
+                                    </div>
+                                </div>
+                                <div id="phonepay-success-mobile" style="display: none;">
+                                    <h4 class="w-100 text-center text-muted mb-3" style="font-size: 2.5rem;">Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade p-4" id="nav-contact-mobile" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div id="paytm-container-mobile">
+                                    <p class="w-100 text-center text-muted mb-3" style="font-size: 2rem;">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                    <h4 class="w-100 text-center text-muted mb-3" style="font-size: 2.5rem;"> Enter Your 10 digit Paytm Number</h4>
+                                    <input type="number" id="paytm-number-mobile" name="paytm-number" class="form-control mb-3 text-center" style="font-size: 2rem;" >
+                                    <div class="w-100 d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-primary" id="paytm-submit-mobile" style="font-size: 2rem;">Submit</button>
+                                    </div>
+                                </div>
+                                <div id="paytm-success-mobile" style="display: none;">
+                                    <h4 class="w-100 text-center text-muted mb-3" style="font-size: 2.5rem;">Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade p-4" id="nav-account-mobile" role="tabpanel" aria-labelledby="nav-account-tab">
+                                <div id="account-container-mobile">
+                                    <p class="w-100 text-center text-muted mb-3" style="font-size: 2rem;">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                    <h4 class="w-100 text-center text-muted mb-3" style="font-size: 2.5rem;"> Enter Your Account Details</h4>
+                                    <input type="text" id="account-name-mobile" name="account-name" class="form-control mb-3 text-center" placeholder="Name On Account" style="font-size: 2rem;">
+                                    <input type="number" id="account-number-mobile" name="account-number" class="form-control mb-3 text-center" placeholder="Account Number" style="font-size: 2rem;">
+                                    <input type="text" id="account-ifsc-mobile" name="account-ifsc" class="form-control mb-3 text-center" placeholder="IFSC Code" style="font-size: 2rem;">
+                                    <div class="w-100 d-flex justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-primary" id="account-submit-mobile" style="font-size: 2rem;">Submit</button>
+                                    </div>
+                                </div>
+                                <div id="account-success-mobile" style="display: none;">
+                                    <h4 class="w-100 text-center text-muted mb-3" style="font-size: 2.5rem;">Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+     
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        //open mobile drawer
+        $("#drawer").css('display','none');
+        $("#open-drawer").on("click",function(){
+            if($("#drawer").css('display') == 'none'){
+                $("#drawer").css('display','block');
+            } else{
+                $("#drawer").css('display','none');
+            }
+        });
+        $("#cross").on("click",function(){
+            $("#drawer").css('display','none');
+        });
+
+        var email = sessionStorage.getItem('username');
+
+        if(email == null){
+            window.location = "login";
+        }
+
+        var name="";
+        var referral_id="";
+        var phone="";
+        var total_income = 0;
+        var total_red_amount = 0;
+
+        $.ajax({
+            type:'POST',
+            url:'php/affiliate-dashboard-data.php',
+            dataType: "json",
+            data:{
+                'email' : email
+            },
+            success:function(data){
+                if(data.status == 201){
+                    name = data.name;
+                    referral_id = data.referral_id;
+                    phone = data.phone;
+
+                    // assign values
+                    $("#name-desktop").html(name);
+                    $("#name-mobile").html(name);
+                    $("#referral-link-desktop").html("https://cryptonite.finstreet.in/?ref="+referral_id);
+                    $("#referral-link-desktop").attr('href',"https://cryptonite.finstreet.in/?ref="+referral_id);
+                    $("#referral-link-mobile").html("https://cryptonite.finstreet.in/?ref="+referral_id);
+                    $("#referral-link-mobile").attr('href',"https://cryptonite.finstreet.in/?ref="+referral_id);
+                    $("#total-clicks-desktop").html(data.total_clicks);
+                    $("#total-clicks-mobile").html(data.total_clicks);
+                    $("#unique-visitors-desktop").html(data.unique_visitors);
+                    $("#unique-visitors-mobile").html(data.unique_visitors);
+
+                    $("#no-payments-desktop").css('display', 'none');
+                    $("#no-payments-mobile").css('display', 'none');
+
+                    
+
+                    for( var i =0; i<data.orders.length; i++){
+                        $("#orders-desktop").html($("#orders-desktop").html() + '<div class="row"><div class="col-8 pl-5">' + data.orders[i].name + '</div><div class="col-4 pr-5 text-right"><span>&#8377;</span>'+ data.orders[i].amount +'</div></div><hr>');
+                        $("#orders-mobile").html($("#orders-mobile").html() + '<div class="row"><div class="col-8" style="font-size: 2rem">'+ data.orders[i].name+'</div><div class="col-4 text-right" style="font-size: 2rem"><span>&#8377;</span>'+ data.orders[i].amount+'</div></div><hr>');
+
+                        total_income = Math.floor((data.orders[i].amount)*data.commission) + total_income;
+                    }
+
+                    if(data.redeemStatus == 211){
+                        for( var i =0; i<data.redeem_requests.length; i++){
+                            total_red_amount = total_red_amount + parseInt(data.redeem_requests[i].redeem_amount);
+                        }
+                    }
+
+                    
+                    $("#total-income-desktop").html(total_income);
+                    $("#total-income-mobile").html(total_income);
+                    
+                    $("#total-payments-desktop").html(data.orders.length);
+                    $("#total-payments-mobile").html(data.orders.length);
+
+                    $("#total-red-amount-desktop").html(total_red_amount);
+                    $("#total-red-amount-mobile").html(total_red_amount);
+
+                    $("#total-desktop").html(total_income);
+                    $("#total-mobile").html(total_income);
+
+                    $(".redeemable-amount").html(total_income - total_red_amount);
+                    var month = 0;
+                    var week = 0;
+                    var yesterday =0;
+                    var today = 0;
+                    var date_today = new Date();
+                    for( var i = 0; i<data.orders.length; i++){
+                        var order_date = new Date(data.orders[i].date_now);
+                        if(order_date.toDateString() === date_today.toDateString()){
+                            today = today + Math.floor((data.orders[i].amount)*data.commission);
+                        }
+                        var diff = date_today.getDate() - order_date.getDate();
+                        if(diff == 1){
+                            yesterday = yesterday + Math.floor((data.orders[i].amount)*data.commission);
+                        }
+                        if(diff <= 7){
+                            week = week + Math.floor((data.orders[i].amount)*data.commission);
+                        }
+                        if(diff <= 30){
+                            month = month + Math.floor((data.orders[i].amount)*data.commission);
+                        }
+                    }
+                    $("#month-desktop").html(month);
+                    $("#month-mobile").html(month);
+                    $("#week-desktop").html(week);
+                    $("#week-mobile").html(week);
+                    $("#today-desktop").html(today);
+                    $("#today-mobile").html(today);
+                    $("#yesterday-desktop").html(yesterday);
+                    $("#yesterday-mobile").html(yesterday);
+
+                    // payment options autofill
+                    $("#gpay-number").val(data.phone);
+                    $("#phonepay-number").val(data.phone);
+                    $("#paytm-number").val(data.phone);
+                    $("#gpay-number-mobile").val(data.phone);
+                    $("#phonepay-number-mobile").val(data.phone);
+                    $("#paytm-number-mobile").val(data.phone);
+                    
+                    // console.log(data.orders.length);
+                    if (data.orders.length < 5) {
+                        $(".level").html(1);
+                    } else if (data.orders.length < 10) {
+                        $(".level").html(2);
+                        $(".icon1").css("display", "none");
+                    } else if (data.orders.length < 15) {
+                        $(".level").html(3);
+                        $(".icon1").css("display", "none");
+                        $(".icon2").css("display", "none");
+                    } else if (data.orders.length < 20) {
+                        $(".level").html(4);
+                        $(".icon1").css("display", "none");
+                        $(".icon2").css("display", "none");
+                        $(".icon3").css("display", "none");
+                    } else if (data.orders.length < 25) {
+                        $(".level").html(5);
+                        $(".icon1").css("display", "none");
+                        $(".icon2").css("display", "none");
+                        $(".icon3").css("display", "none");
+                        $(".icon4").css("display", "none");
+                    } else if (data.orders.length < 30) {
+                        $(".level").html(6);
+                        $(".icon1").css("display", "none");
+                        $(".icon2").css("display", "none");
+                        $(".icon3").css("display", "none");
+                        $(".icon4").css("display", "none");
+                        $(".icon5").css("display", "none");
+                    } else if (data.orders.length < 40) {
+                        $(".level").html(7);
+                        $(".icon1").css("display", "none");
+                        $(".icon2").css("display", "none");
+                        $(".icon3").css("display", "none");
+                        $(".icon4").css("display", "none");
+                        $(".icon5").css("display", "none");
+                        $(".icon6").css("display", "none");
+                    } else if (data.orders.length < 50) {
+                        $(".level").html(8);
+                        $(".icon1").css("display", "none");
+                        $(".icon2").css("display", "none");
+                        $(".icon3").css("display", "none");
+                        $(".icon4").css("display", "none");
+                        $(".icon5").css("display", "none");
+                        $(".icon6").css("display", "none");
+                        $(".icon7").css("display", "none");
+                    } else if (data.orders.length < 60) {
+                        $(".level").html(9);
+                        $(".icon1").css("display", "none");
+                        $(".icon2").css("display", "none");
+                        $(".icon3").css("display", "none");
+                        $(".icon4").css("display", "none");
+                        $(".icon5").css("display", "none");
+                        $(".icon6").css("display", "none");
+                        $(".icon7").css("display", "none");
+                        $(".icon8").css("display", "none");
+                    } else if (data.orders.length < 75) {
+                        $(".level").html(10);
+                        $(".icon1").css("display", "none");
+                        $(".icon2").css("display", "none");
+                        $(".icon3").css("display", "none");
+                        $(".icon4").css("display", "none");
+                        $(".icon5").css("display", "none");
+                        $(".icon6").css("display", "none");
+                        $(".icon7").css("display", "none");
+                        $(".icon8").css("display", "none");
+                        $(".icon9").css("display", "none");
+                    } else if (data.orders.length < 100) {
+                        $(".level").html(11);
+                        $(".icon1").css("display", "none");
+                        $(".icon2").css("display", "none");
+                        $(".icon3").css("display", "none");
+                        $(".icon4").css("display", "none");
+                        $(".icon5").css("display", "none");
+                        $(".icon6").css("display", "none");
+                        $(".icon7").css("display", "none");
+                        $(".icon8").css("display", "none");
+                        $(".icon9").css("display", "none");
+                        $(".icon10").css("display", "none");
+                    }else if (data.orders.length >= 100) {
+                        $(".level").html(12);
+                        $(".icon1").css("display", "none");
+                        $(".icon2").css("display", "none");
+                        $(".icon3").css("display", "none");
+                        $(".icon4").css("display", "none");
+                        $(".icon5").css("display", "none");
+                        $(".icon6").css("display", "none");
+                        $(".icon7").css("display", "none");
+                        $(".icon8").css("display", "none");
+                        $(".icon9").css("display", "none");
+                        $(".icon10").css("display", "none");
+                        $(".icon11").css("display", "none");
+                    } else {
+                        $(".level").html(1);
+                    }
+                    
+                    // console.log(data.orders);
+
+                }else if(data.status == 401){
+                    //only no orders were found rest all is same
+                    // alert(data.error);
+                    name = data.name;
+                    referral_id = data.referral_id;
+                    phone = data.phone;
+
+                    // assign values
+                    $("#name-desktop").html(name);
+                    $("#name-mobile").html(name);
+                    $("#referral-link-desktop").html("https://cryptonite.finstreet.in/?ref="+referral_id);
+                    $("#referral-link-desktop").attr('href',"https://cryptonite.finstreet.in/?ref="+referral_id);
+                    $("#referral-link-mobile").html("https://cryptonite.finstreet.in/?ref="+referral_id);
+                    $("#referral-link-mobile").attr('href',"https://cryptonite.finstreet.in/?ref="+referral_id);
+                    $("#total-clicks-desktop").html(data.total_clicks);
+                    $("#total-clicks-mobile").html(data.total_clicks);
+                    $("#unique-visitors-desktop").html(data.unique_visitors);
+                    $("#unique-visitors-mobile").html(data.unique_visitors);
+
+                    // payment options autofill
+                    $("#gpay-number").val(data.phone);
+                    $("#phonepay-number").val(data.phone);
+                    $("#paytm-number").val(data.phone);
+                    $("#gpay-number-mobile").val(data.phone);
+                    $("#phonepay-number-mobile").val(data.phone);
+                    $("#paytm-number-mobile").val(data.phone);
+
+                } else if(data.status == 301){
+                    //Email already registered
+                    alert(data.error);
+                }else if(data.status == 302){
+                    //phone already registered
+                    alert(data.error);
+                } else if(data.status == 601){
+                    console.log(data.error);
+                    // alert("problem with query");
+                }else{
+                    
+                } 
+            }
+        });
+
+
+        var badge ="";
+        $.ajax({
+            type:'POST',
+            url:'php/claim-status.php',
+            dataType: "json",
+            data:{                    
+                'email' : email
+            },
+            success:function(data){
+                if(data.status == 101){
+                    for (var i = 0; i < data.paidRequests.length; i++) {
+
+                        // console.log(data.paidRequests[i]);
+
+                        $('.claim-button')[parseInt(data.paidRequests[i].badge) - 1].innerHTML = "Claimed!";
+                        $('.claim-button')[parseInt(data.paidRequests[i].badge) - 1].setAttribute('disabled','true');
+                        $('.claim-button')[parseInt(data.paidRequests[i].badge) - 1].style.cursor = "no-drop";
+                    }
+
+                }
+            }
+        });
+        
+        $.ajax({
+            type:'POST',
+            url:'php/claim-status.php',
+            dataType: "json",
+            data:{                    
+                'email' : email
+            },
+            success:function(data){
+                if(data.status == 101){
+                    for (var i = 0; i < data.paidRequests.length; i++) {
+
+                        // console.log(data.paidRequests[i]);
+
+                        $('.claim-button-mobile')[parseInt(data.paidRequests[i].badge) - 1].innerHTML = "Claimed!";
+                        $('.claim-button-mobile')[parseInt(data.paidRequests[i].badge) - 1].setAttribute('disabled','true');
+                        $('.claim-button-mobile')[parseInt(data.paidRequests[i].badge) - 1].style.cursor = "no-drop";
+                    }
+
+                }
+            }
+        });
+
+        function validate(badge) {  
+            var error = "";
+            // console.log(badge);
+            if(error == ""){
+                $.ajax({
+                    type:'POST',
+                    url:'php/achivement-claim-data.php',
+                    dataType: "json",
+                    data:{   
+                        // rewards_request : $("#reward").text(),                     
+                        badge : badge,                        
+                        'email': email
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            // alert('success');
+                            alert('Thank you, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.');
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'reward',
+                                'email' : email
+                            });
+                        } else if(data.status == 101){
+                            // already paid
+                            alert('we already paid your Request');
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else if (data.status == 202){
+                            alert('We already have a request to redeem your reward. Please wait for 24 hours before submitting another request.');
+                        }else{
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        };
+        $("#gpay-submit").on("click",function(e){
+            e.preventDefault();
+            var error = "";
+
+            if($("#gpay-number").val() == ""){
+                $("#gpay-number").css('border-color','red');
+                $("#gpay-number").css('border-width','1px');
+                error = error + 'number';
+            }else{
+                $("#gpay-number").css('border-color','#BCE0FD');
+                $("#gpay-number").css('border-width','1px');
+            }
+
+            if(error == ""){
+                $.ajax({
+                    type:'POST',
+                    url:'php/redeem-requests.php',
+                    dataType: "json",
+                    data:{
+                        gpay_number : $("#gpay-number").val(),
+                        type: 'gpay',
+                        'email': email,
+                        'redeem_amount': total_income - total_red_amount
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            // alert('success');
+                            $("#gpay-container").css('display','none');
+                            $("#gpay-success").css('display','block');
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'redeem',
+                                'method' : 'gpay',
+                                'email' : email
+                            });
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else if (data.status == 202){
+                            alert('We already have a request to redeem your amount. Please wait for 24 hours before submitting another request.');
+                        }else{
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        });
+        $("#phonepay-submit").on("click",function(e){
+            e.preventDefault();
+            var error = "";
+
+            if($("#phonepay-number").val() == ""){
+                $("#phonepay-number").css('border-color','red');
+                $("#phonepay-number").css('border-width','1px');
+                error = error + 'number';
+            }else{
+                $("#phonepay-number").css('border-color','#BCE0FD');
+                $("#phonepay-number").css('border-width','1px');
+            }
+
+            if(error == ""){
+                $.ajax({
+                    type:'POST',
+                    url:'php/redeem-requests.php',
+                    dataType: "json",
+                    data:{
+                        phonepay_number : $("#phonepay-number").val(),
+                        type: 'phonepay',
+                        'email': email,
+                        'redeem_amount': total_income - total_red_amount
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            // alert('success');
+                            $("#phonepay-container").css('display','none');
+                            $("#phonepay-success").css('display','block');
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'redeem',
+                                'method' : 'phonepay',
+                                'email' : email
+                            });
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else if (data.status == 202){
+                            alert('We already have a request to redeem your amount. Please wait for 24 hours before submitting another request.');
+                        }else{
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        });
+        $("#paytm-submit").on("click",function(e){
+            e.preventDefault();
+            var error = "";
+
+            if($("#paytm-number").val() == ""){
+                $("#paytm-number").css('border-color','red');
+                $("#paytm-number").css('border-width','1px');
+                error = error + 'number';
+            }else{
+                $("#paytm-number").css('border-color','#BCE0FD');
+                $("#paytm-number").css('border-width','1px');
+            }
+
+            if(error == ""){
+                $.ajax({
+                    type:'POST',
+                    url:'php/redeem-requests.php',
+                    dataType: "json",
+                    data:{
+                        paytm_number : $("#paytm-number").val(),
+                        type: 'paytm',
+                        'email': email,
+                        'redeem_amount': total_income - total_red_amount
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            // alert('success');
+                            $("#paytm-container").css('display','none');
+                            $("#paytm-success").css('display','block');
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'redeem',
+                                'method' : 'paytm',
+                                'email' : email
+                            });
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else if (data.status == 202){
+                            alert('We already have a request to redeem your amount. Please wait for 24 hours before submitting another request.');
+                        }else{
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        });
+        $("#account-submit").on("click",function(e){
+            e.preventDefault();
+            var error = "";
+
+            if($("#account-number").val() == ""){
+                $("#account-number").css('border-color','red');
+                $("#account-number").css('border-width','1px');
+                error = error + 'number';
+            }else{
+                $("#account-number").css('border-color','#BCE0FD');
+                $("#account-number").css('border-width','1px');
+            }
+            if($("#account-name").val() == ""){
+                $("#account-name").css('border-color','red');
+                $("#account-name").css('border-width','1px');
+                error = error + 'name';
+            }else{
+                $("#account-name").css('border-color','#BCE0FD');
+                $("#account-name").css('border-width','1px');
+            }
+            if($("#account-ifsc").val() == ""){
+                $("#account-ifsc").css('border-color','red');
+                $("#account-ifsc").css('border-width','1px');
+                error = error + 'ifsc';
+            }else{
+                $("#account-ifsc").css('border-color','#BCE0FD');
+                $("#account-ifsc").css('border-width','1px');
+            }
+
+            if(error == ""){
+                $.ajax({
+                    type:'POST',
+                    url:'php/redeem-requests.php',
+                    dataType: "json",
+                    data:{
+                        account_number : $("#account-number").val(),
+                        account_name: $("#account-name").val(),
+                        account_ifsc: $("#account-ifsc").val(),
+                        type: 'account',
+                        'email': email,
+                        'redeem_amount': total_income - total_red_amount
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            // alert('success');
+                            $("#account-container").css('display','none');
+                            $("#account-success").css('display','block');
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'redeem',
+                                'method' : 'account',
+                                'email' : email
+                            });
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else if (data.status == 202){
+                            alert('We already have a request to redeem your amount. Please wait for 24 hours before submitting another request.');
+                        }else{
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        });
+
+        // $('.owl-carousel').owlCarousel({
+        //     loop: true,
+        //     margin: 10,
+        //     nav: true,
+        //     navText: [
+        //         "<i class='fa fa-caret-left'></i>",
+        //         "<i class='fa fa-caret-right'></i>"
+        //     ],
+        //     autoplay: true,
+        //     autoplayHoverPause: true,
+        //     responsive: {
+        //         0: {
+        //         items: 1
+        //         },
+        //         600: {
+        //         items: 3
+        //         },
+        //         1000: {
+        //         items: 5
+        //         }
+        //     }
+        // })
+
+        // mobile code
+        $("#gpay-submit-mobile").on("click",function(e){
+            e.preventDefault();
+            var error = "";
+
+            if($("#gpay-number-mobile").val() == ""){
+                $("#gpay-number-mobile").css('border-color','red');
+                $("#gpay-number-mobile").css('border-width','1px');
+                error = error + 'number';
+            }else{
+                $("#gpay-number-mobile").css('border-color','#BCE0FD');
+                $("#gpay-number-mobile").css('border-width','1px');
+            }
+
+            if(error == ""){
+                $.ajax({
+                    type:'POST',
+                    url:'php/redeem-requests.php',
+                    dataType: "json",
+                    data:{
+                        gpay_number : $("#gpay-number-mobile").val(),
+                        type: 'gpay',
+                        'email': email,
+                        'redeem_amount': total_income - total_red_amount
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            // alert('success');
+                            $("#gpay-container-mobile").css('display','none');
+                            $("#gpay-success-mobile").css('display','block');
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'redeem',
+                                'method' : 'gpay',
+                                'email' : email,
+                                'redeem_amount': total_income - total_red_amount
+                            });
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else if (data.status == 202){
+                            alert('We already have a request to redeem your amount. Please wait for 24 hours before submitting another request.');
+                        }else{
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        });
+        $("#phonepay-submit-mobile").on("click",function(e){
+            e.preventDefault();
+            var error = "";
+
+            if($("#phonepay-number-mobile").val() == ""){
+                $("#phonepay-number-mobile").css('border-color','red');
+                $("#phonepay-number-mobile").css('border-width','1px');
+                error = error + 'number';
+            }else{
+                $("#phonepay-number-mobile").css('border-color','#BCE0FD');
+                $("#phonepay-number-mobile").css('border-width','1px');
+            }
+
+            if(error == ""){
+                $.ajax({
+                    type:'POST',
+                    url:'php/redeem-requests.php',
+                    dataType: "json",
+                    data:{
+                        phonepay_number : $("#phonepay-number-mobile").val(),
+                        type: 'phonepay',
+                        'email': email,
+                        'redeem_amount': total_income - total_red_amount
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            // alert('success');
+                            $("#phonepay-container-mobile").css('display','none');
+                            $("#phonepay-success-mobile").css('display','block');
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'redeem',
+                                'method' : 'phonepay',
+                                'email' : email
+                            });
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else if (data.status == 202){
+                            alert('We already have a request to redeem your amount. Please wait for 24 hours before submitting another request.');
+                        }else{
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        });
+        $("#paytm-submit-mobile").on("click",function(e){
+            e.preventDefault();
+            var error = "";
+
+            if($("#paytm-number-mobile").val() == ""){
+                $("#paytm-number-mobile").css('border-color','red');
+                $("#paytm-number-mobile").css('border-width','1px');
+                error = error + 'number';
+            }else{
+                $("#paytm-number-mobile").css('border-color','#BCE0FD');
+                $("#paytm-number-mobile").css('border-width','1px');
+            }
+
+            if(error == ""){
+                $.ajax({
+                    type:'POST',
+                    url:'php/redeem-requests.php',
+                    dataType: "json",
+                    data:{
+                        paytm_number : $("#paytm-number-mobile").val(),
+                        type: 'paytm',
+                        'email': email,
+                        'redeem_amount': total_income - total_red_amount
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            // alert('success');
+                            $("#paytm-container-mobile").css('display','none');
+                            $("#paytm-success-mobile").css('display','block');
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'redeem',
+                                'method' : 'paytm',
+                                'email' : email
+                            });
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else if (data.status == 202){
+                            alert('We already have a request to redeem your amount. Please wait for 24 hours before submitting another request.');
+                        }else{
+                            console.log(data);
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        });
+        $("#account-submit-mobile").on("click",function(e){
+            e.preventDefault();
+            var error = "";
+
+            if($("#account-number-mobile").val() == ""){
+                $("#account-number-mobile").css('border-color','red');
+                $("#account-number-mobile").css('border-width','1px');
+                error = error + 'number';
+            }else{
+                $("#account-number-mobile").css('border-color','#BCE0FD');
+                $("#account-number-mobile").css('border-width','1px');
+            }
+            if($("#account-name-mobile").val() == ""){
+                $("#account-name-mobile").css('border-color','red');
+                $("#account-name-mobile").css('border-width','1px');
+                error = error + 'name';
+            }else{
+                $("#account-name-mobile").css('border-color','#BCE0FD');
+                $("#account-name-mobile").css('border-width','1px');
+            }
+            if($("#account-ifsc-mobile").val() == ""){
+                $("#account-ifsc-mobile").css('border-color','red');
+                $("#account-ifsc-mobile").css('border-width','1px');
+                error = error + 'ifsc';
+            }else{
+                $("#account-ifsc-mobile").css('border-color','#BCE0FD');
+                $("#account-ifsc-mobile").css('border-width','1px');
+            }
+
+            if(error == ""){
+                $.ajax({
+                    type:'POST',
+                    url:'php/redeem-requests.php',
+                    dataType: "json",
+                    data:{
+                        account_number : $("#account-number-mobile").val(),
+                        account_name: $("#account-name-mobile").val(),
+                        account_ifsc: $("#account-ifsc-mobile").val(),
+                        type: 'account',
+                        'email': email,
+                        'redeem_amount': total_income - total_red_amount
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            // alert('succe/ss');
+                            $("#account-container-mobile").css('display','none');
+                            $("#account-success-mobile").css('display','block');
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'redeem',
+                                'method' : 'account',
+                                'email' : email
+                            });
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else if (data.status == 202){
+                            alert('We already have a request to redeem your amount. Please wait for 24 hours before submitting another request.');
+                        }else{
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        });
+        
+
+    </script>
+</body>
+</html>

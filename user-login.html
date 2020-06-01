@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150643411-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-150643411-2');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PFRW8HP');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <title>User Login | Finstreet | India's 1st ever Financial Freedom Coach</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/cropped-Fin-270x270.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <style type="text/css">
+        .divider-text {
+            position: relative;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .divider-text span {
+            padding: 7px;
+            font-size: 12px;
+            position: relative;   
+            z-index: 2;
+        }
+        .divider-text:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            top: 55%;
+            left: 0;
+            z-index: 1;
+        }
+
+        .btn-facebook {
+            background-color: #405D9D;
+            color: #fff;
+        }
+        .btn-twitter {
+            background-color: #42AEEC;
+            color: #fff;
+        }
+    </style>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2925272084236286');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2925272084236286&ev=PageView&noscript=1"
+      /></noscript>
+      <!-- End Facebook Pixel Code -->
+      
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFRW8HP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+    <div class="d-none d-lg-block">
+        <!-- Navigation -->
+        <div class="fixed-top" style="padding:20px 0px;background-color:#00abc9;outline:none;">
+            <nav class="navbar navbar-expand-lg navbar-dark static-top">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <img src="images/logo.png" alt="" width="133" height="50">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto font-roboto-b" style="font-size: 18px;font-weight:bold;">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link cursor-pointer text-white" href="signup">Signup</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="login">Login</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Page Content -->
+        <div class="container mb-5" style="margin-top: 150px;">
+        
+            <div class="card bg-light">
+                <article class="card-body mx-auto" style="max-width: 400px;">
+                    <h4 class="card-title mt-3 text-center">User Login</h4>
+                    <form>
+                        
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                            </div>
+                            <input name="email" id="email" class="form-control" placeholder="Email address" type="email">
+                        </div> <!-- form-group// -->
+                        
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control" id="password" name="password" placeholder="Password" type="password">
+                        </div> <!-- form-group// -->
+                        
+                        <div class="form-group">
+                            <button type="submit" id="login" class="btn btn-primary btn-block">Login</button>
+                        </div> <!-- form-group// -->
+                        <p class="text-center" style="font-size: 14px;"><a href="user-forgot-password">Forgot Password?</a> </p>
+                        <p class="text-center">Do not have an account? Purchase the Course now <a href="checkout">Buy Now</a> </p>
+                    </form>
+                </article>
+            </div> <!-- card.// -->
+        
+        </div>
+        <!--container end.//-->
+    </div>
+
+    <div class="d-lg-none">
+        <!-- Navigation -->
+        <div class="fixed-top" style="padding:80px 0px;background-color:#00abc9;outline:none;">
+            <header>
+                <div class="position-fixed h-100 w-100" style="opacity:1;backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);z-index:16;display:none;top:0px" id="drawer">
+                    <div class="container h-100 w-100 pr-0">
+                        <div class="row h-100 w-100 mr-0 position-absolute">
+                            <div class="col-2 d-flex justify-content-end pt-5 pl-0" id="cross" style="padding-right:20px !important;">
+                                <div id="mobile-cross">
+                                    <p class="m-0" style="font-size:50px;color:#fff;">X</p>
+                                </div>
+                            </div>
+                            <div class="col-10 position-relative" style="background: #00abc9 0% 0% no-repeat padding-box;">
+                                <div class="position-absolute w-100" style="top:10%;">
+                                    <p class="footer-text font-weight-light text-center" style="font-size:50px;margin-bottom:10px; font-family: europhonic;color:#231c62;" onclick="window.location = '/'">Home</p>
+                                    <!-- <p class="footer-text font-weight-light text-center" style="font-size:50px;margin-bottom:10px; font-family: europhonic;color:#fff;" onclick="window.location = '/'">Home</p> -->
+                                    
+                                </div>                          
+                            </div>                        
+                        </div>                
+                    </div>                
+                </div>        
+                <div class="nav-container">
+                    <div id="mobile-navbar"></div>
+                    <div style="position: fixed; z-index: 10; right:70px; margin-top:-38px; z-index:15 !important;" id="open-drawer">
+                        <hr style="width: 50px;height: 4px;background-color: white;margin-top: 10px;margin-bottom: 0px;border-radius: 100px;">
+                        <hr style="width: 50px;height: 4px;background-color: white;margin-top: 15px;margin-bottom: 0px;border-radius: 100px;">
+                        <hr style="width: 50px;height: 4px;background-color: white;margin-top: 15px;margin-bottom: 0px;border-radius: 100px;">
+                    </div>
+                    <div class="d-flex position-fixed align-items-center w-100" style="z-index: 10; margin-top:-45px; margin-left:32px;">
+                        <a class="navbar-brand header-text" id="mobile-header-logo-text" href="/">
+                            <img class="logo-header" src="images/logo.png" alt="" style="width:250px;">
+                        </a>
+                    </div>
+                </div>            
+            </header>
+        </div>
+
+        <!-- Page Content -->
+        <div class="container mb-5" style="margin-top: 250px;">
+        
+            <div class="card bg-light">
+                <article class="card-body">
+                    <h4 class="card-title mt-3 text-center mb-5" style="font-size: 3rem;">User Login</h4>
+                    <form>
+                        
+                        <div class="form-group input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text px-4"> <i class="fa fa-envelope" style="font-size: 2rem;"></i> </span>
+                            </div>
+                            <input name="email" id="email-mobile" class="form-control" placeholder="Email address" type="email" style="font-size: 2rem;">
+                        </div> <!-- form-group// -->
+                        
+                        <div class="form-group input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text px-4"> <i class="fa fa-lock" style="font-size: 2rem;"></i> </span>
+                            </div>
+                            <input class="form-control" id="password-mobile" name="password" placeholder="Password" type="password" style="font-size: 2rem;">
+                        </div> <!-- form-group// -->
+                        
+                        <div class="form-group">
+                            <button type="submit" id="login-mobile" class="btn btn-primary btn-block" style="font-size: 2.5rem;">Login</button>
+                        </div> <!-- form-group// -->
+                        <p class="text-center" style="font-size: 1.5rem;"><a href="user-forgot-password">Forgot Password?</a> </p>
+                        <p class="text-center" style="font-size: 2rem;">Do not have an account? Purchase the Course now <a href="checkout">Buy Now</a> </p>
+                    </form>
+                </article>
+            </div> <!-- card.// -->
+        
+        </div>
+        <!--container end.//-->
+    </div>
+    
+        
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        //open mobile drawer
+        $("#drawer").css('display','none');
+        $("#open-drawer").on("click",function(){
+            if($("#drawer").css('display') == 'none'){
+                $("#drawer").css('display','block');
+            } else{
+                $("#drawer").css('display','none');
+            }
+        });
+        $("#cross").on("click",function(){
+            $("#drawer").css('display','none');
+        });
+
+        function validateEmail() {
+            var email = $("#email").val();
+            var emailReg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+            if (emailReg.test(email)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        $("#login").on("click", function(e){
+            e.preventDefault();
+            var error = "";
+
+            if(validateEmail()) {
+                $("#email").css('border-color','#BCE0FD');
+                $("#email").css('border-width','1px');
+            }else{
+                $("#email").css('border-color','red');
+                $("#email").css('border-width','1px');
+                error = error + 'email';
+            }
+
+            if($("#password").val() == ""){
+                $("#password").css('border-color','red');
+                $("#password").css('border-width','1px');
+                error = error + 'confirm password';
+            }else{
+                $("#password").css('border-color','#BCE0FD');
+                $("#password").css('border-width','1px');
+            }
+
+            if(error == ""){
+                
+                $.ajax({
+                    type:'POST',
+                    url:'php/user-login.php',
+                    dataType: "json",
+                    data:{
+                        email : $("#email").val(),
+                        password: $("#password").val()
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            sessionStorage.useremail = $("#email").val();
+                            window.location = "user-dashboard";
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else{
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        });
+
+        // code for mobile
+        function validateEmailMobile() {
+            var email = $("#email-mobile").val();
+            var emailReg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+            if (emailReg.test(email)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        $("#login-mobile").on("click", function(e){
+            e.preventDefault();
+            var error = "";
+
+            if(validateEmailMobile()) {
+                $("#email-mobile").css('border-color','#BCE0FD');
+                $("#email-mobile").css('border-width','1px');
+            }else{
+                $("#email-mobile").css('border-color','red');
+                $("#email-mobile").css('border-width','1px');
+                error = error + 'email';
+            }
+
+            if($("#password-mobile").val() == ""){
+                $("#password-mobile").css('border-color','red');
+                $("#password-mobile").css('border-width','1px');
+                error = error + 'confirm password';
+            }else{
+                $("#password-mobile").css('border-color','#BCE0FD');
+                $("#password-mobile").css('border-width','1px');
+            }
+
+            if(error == ""){
+                
+                $.ajax({
+                    type:'POST',
+                    url:'php/user-login.php',
+                    dataType: "json",
+                    data:{
+                        email : $("#email-mobile").val(),
+                        password: $("#password-mobile").val()
+                    },
+                    success:function(data){
+                        if(data.status == 201){
+                            sessionStorage.useremail = $("#email-mobile").val();
+                            window.location = "user-dashboard";
+                        } else if(data.status == 301){
+                            //Email already registered
+                            alert(data.error);
+                        }else{
+                            alert("Some error occured. Our team is dedicatedly addressing this issue. Thankyou for your patience");
+                        } 
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
