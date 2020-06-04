@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150643411-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150643411-2');
+    </script> -->
+
+    <!-- Google Tag Manager -->
+    <!-- <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PFRW8HP');</script> -->
+    <!-- End Google Tag Manager -->
+
+    <title> Helping Key&#8482; | Finstreet | India's 1st ever Financial Freedom Coach</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="icon" href="images/cropped-Fin-270x270.jpg"> -->
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- style -->
+    <style type="text/css">
+        /* images css */
+        * {
+            box-sizing: border-box;
+        }
+        .col-2 {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+        /* Style the images inside the grid */
+        .col-6 img {
+            cursor: pointer;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+            position: relative;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .disabled {
+            color: currentColor;
+            cursor: not-allowed !important;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+        /* select arrow css */
+        select {
+            /* for Firefox */
+            -moz-appearance: none;
+            /* for Chrome */
+            -webkit-appearance: none;
+        }
+
+        /* For IE10 */
+        select::-ms-expand {
+            display: none;
+        }
+        select.minimal {
+            background-image:
+                linear-gradient(45deg, transparent 50%, gray 50%),
+                linear-gradient(135deg, gray 50%, transparent 50%),
+                linear-gradient(to right, #f8f9fa, #f8f9fa);
+            background-position:
+                calc(100% - 20px) calc(1em + 2px),
+                calc(100% - 15px) calc(1em + 2px),
+                calc(100% - 2.5em) 0.5em;
+            background-size:
+                5px 5px,
+                5px 5px,
+                1px 1.5em;
+            background-repeat: no-repeat;
+        }
+
+        select.minimal:focus {
+            background-image:
+                linear-gradient(45deg, gray 50%, transparent 50%),
+                linear-gradient(135deg, transparent 50%, gray 50%),
+                linear-gradient(to right, #f8f9fa, #f8f9fa);
+            background-position:
+                calc(100% - 15px) 1em,
+                calc(100% - 20px) 1em,
+                calc(100% - 2.5em) 0.5em;
+            background-size:
+                5px 5px,
+                5px 5px,
+                1px 1.5em;
+            background-repeat: no-repeat;
+            border-color: gray;
+            outline: 0;
+        }
+
+        /* input type button for add or remove quantity */
+        .quantity {
+            position: relative;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        .quantity input {
+            width: 90px;
+            height: 57px;
+            line-height: 1.65;
+            float: left;
+            display: block;
+            padding: 0;
+            margin: 0;
+            padding-left: 20px;
+            border: 1px solid #eee;
+        }
+        .quantity input:focus {
+            outline: 0;
+        }
+        .quantity-nav {
+            float: left;
+            position: relative;
+            height: 42px;
+        }
+        .quantity-button {
+            position: relative;
+            cursor: pointer;
+            border-left: 1px solid #eee;
+            width: 35px;
+            text-align: center;
+            color: #333;
+            font-size:22px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+            line-height: 1.7;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        .quantity-button.quantity-up {
+            position: absolute;
+            height: 75%;
+            top: 0;
+            border-bottom: 1px solid #eee;
+        }
+        .quantity-button.quantity-down {
+            position: absolute;
+            bottom: -14px;
+            height: 75%;
+        }
+        /* fa icon */
+        .fa:hover{
+            color: #ffc107;
+        }
+        @media (max-width: 700px) {
+            .closeButton {
+                margin-right: 15px;
+                font-size: 27px;
+            }
+
+            .formStyle {
+                padding: 0px 0px;
+            }
+
+            .formInput {
+                width: 100%;
+                padding: 0px 0px;
+            }
+
+            .formInput1 {
+                width: 100%;
+                float: left;
+                padding: 0px 0px;
+            }
+
+            .buttonStyle {
+                float: left;
+            }
+
+            /* sucessfully form css */
+            .backToShop {
+                margin: 0px 10px 0px 10px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+    
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/ebc80d226d.js"></script>
+
+    <!-- Facebook Pixel Code -->
+    <!-- <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2925272084236286');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2925272084236286&ev=PageView&noscript=1" /></noscript> -->
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFRW8HP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript> -->
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="d-none d-lg-block">
+        <!-- Navigation -->
+        <nav class="d-flex justify-content-center navbar bg-danger font-barlow-r">
+            <h6 class="color-white m-0">DUE TO HIGH DEMAND WE ARE LIMITING THE PURCHASE OF ONLY 10 PIECES PER ORDER</h6>                
+        </nav>
+        <nav class="navbar navbar-expand-lg color-black font-barlow-r">
+            <div class="container-fluid">
+                <div class="container" style="padding:10px;">
+                    <div class="col-2 border-right text-center">
+                        <a class="navbar-brand color-black" href="/">Helping <span class="font-saman">Key</span>&#8482;</a>
+                    </div>   
+                    <div class="col-8 border-right">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="ml-auto mr-auto navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link color-black" href="/">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-black" href="for-companies">For Companies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-black" href="affiliate">Earn with us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-black" href="user-login">Login/Signup</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-black" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <h7><i class="fa fa-phone"></i> +91 9876543210</h7>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <div class="container-fluid bg-danger" style="text-align:center;">
+            <div class="container d-flex justify-content-center">
+                <div class="col-5 color-white text-left">
+                    <h1 class="font-barlow-eb p-3 mb-0">Gift Your Employees 
+                    their <span class="font-saman">Key</span> to Safety</h1>
+                </div>
+                <div class="col-5">
+                    <img src="images/office_job_interview-759.png">
+                </div>
+           </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container d-flex pt-5">
+                <div class="col-6">
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                        <img src="images/img_woods_wide.jpg" style="width:100%;height:560px;">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/img_5terre_wide.jpg" style="width:100%;height:560px;">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/img_mountains_wide.jpg" style="width:100%;height:560px;">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/img_lights_wide.jpg" style="width:100%;height:560px;">
+                    </div>
+                    <br>
+                    <!-- Thumbnail images -->
+                    <div class="row m-0">
+                        <div class="col-3 pl-0">
+                            <img class="demo cursor active" src="images/img_woods.jpg" style="width:100%;height:135px;" onclick="currentSlide(1)" alt="The Woods">
+                        </div>
+                        <div class="col-3 pl-0">
+                            <img class="demo cursor" src="images/img_5terre.jpg" style="width:100%;height:135px;" onclick="currentSlide(2)" alt="Cinque Terre">
+                        </div>
+                        <div class="col-3 pl-0">
+                            <img class="demo cursor" src="images/img_mountains.jpg" style="width:113%;height:135px;" onclick="currentSlide(3)" alt="Mountains and fjords">
+                        </div>
+                        <div class="col-3 pr-0">
+                            <img class="demo cursor" src="images/img_lights.jpg" style="width:100%;height:135px;" onclick="currentSlide(4)" alt="Northern Lights">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h2 class="font-barlow-m" style="font-size:27px;"><span class="font-barlow-eb">Helping </span><span class="font-saman">Key</span>&#8482; Your Employees Key to Safety</h2>
+                    <hr>
+                    <p class="font-barlow-b mb-0 d-flex" style="font-size:20px;"><strike class="pr-2" style="color:#c7c2c2">RS.2000 </strike> RS.600 <span class="d-flex justify-content-center p-1 pl-5">
+                        <span class="fa fa-star pr-1 checked"></span>
+                        <span class="fa fa-star pr-1 checked"></span>
+                        <span class="fa fa-star pr-1 checked"></span>
+                        <span class="fa fa-star pr-1 checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="pl-2 font-barlow-m" style="margin-top:-7px;color:#c7c2c2;">1,372 Customer Reviews</span>
+                    </span></p>
+                    <h7 class="font-barlow-m" style="color:#c7c2c2;">Offer Expiring in 3 day 4 hours 19 minutes</h7>
+                    <hr>
+                    <div class="col-11">
+                        <p class="font-barlow-m" style="color:#c7c2c2;">The <span style="color:#000;">Original Anti-Microbial Helping <span class="font-saman">Key</span>&#8482;</span>, Keep your Emplyees safe with the latest in Anti-Microbial Tech.</p>
+                        <ul class="font-barlow-m pb-4" style="color:#c7c2c2;">
+                            <li><span style="color:#000;"></span>Easily maneuver microbe ridden surfaces without fear of infection, keep your emplyees safe during their daily commute.</li>
+                            <li>Made from <span style="color:#000;">BLu&#8482; Certified </span> Anti-Microbial Copper Alloy.</li>
+                            <li><span style="color:#000;">Free </span>Antimicrobial Cleanser Fluid With Every Purchase.</li>
+                            <li><span style="color:#000;">Free </span>Trendy Mask with Every Purchase.</li>
+                            <li><span style="color:#000;">Gifting</span> option Available</li>
+                            <li>will Soon be available in a store near you</li>
+                        </ul>
+                    </div>
+                    <div class="bg-danger col-12 d-flex p-0">
+                        <div class="col-4 p-0">
+                            <div class="color-white justify-content-center p-2" style="display:table;">
+                                <i class="fa fa-truck color-white p-1"></i><p class="mb-0 font-barlow-m" style="display:table-cell;font-size:11px;">Free delivery all across India</p>
+                            </div>
+                        </div>
+                        <div class="col-8 p-0">
+                            <div class="color-white justify-content-center p-2" style="display:table;">
+                                <i class="fa fa-truck color-white p-1"></i><p class="mb-0 font-barlow-m" style="display:table-cell;font-size: 12px;">Pan India fast &amp; realiable delivery Powered By Delhivery</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <br>
+                    <div class="quantity">
+                        <input type="number" min="1" max="10" step="1" value="1">
+                        <button type="button" onclick="location.href='checkout'" class="ml-4 btn btn-danger btn-rounded font-barlow-m waves-effect waves-light" style="border:2px solid;font-size: 20px;padding:12px 35px;"> BUY NOW </button>
+                        <button type="button" onclick="location.href='checkout'" class="ml-4 btn btn-rounded font-barlow-m waves-effect waves-light" style="border:2px solid;font-size: 20px;padding:12px 35px;background-color:#c7c2c2;border-color:#c7c2c2;"> GIFT NOW </button>
+                    </div>
+                    <p class="font-barlow-m m-0 mt-1"><span class="color-danger font-barlow-b">10 Orders</span> <br>Per Person Limit</p>
+                    <hr>
+                    <div class="d-flex">
+                        <div class="col-md-5 col-lg-4 ml-lg-0">
+                            <p class="font-barlow-b m-0">Share with friends</p>
+                        </div>
+                        <div class="col-md-7 col-lg-7 ml-lg-0">        
+                            <!-- Social buttons -->
+                            <div class="text-center">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>        
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>  
+            <div class="container-fluid">
+                <div class="container d-flex pt-3">
+                    <div class="col-12">
+                        <h1 class="font-barlow-eb pt-5">Product Description</h1>
+                        <p class="font-barlow-m" style="color:#c7c2c2;text-align:justify;">The <span style="color:#000;">Original Anti-Microbial Helping <span class="font-saman">Key</span>&#8482;</span>, Keep your employees safe with the latest in Anti-Microbial Tech. It is made from <span style="color:#000;">BLu&#8482; Certified </span> Anti-Microbial Copper Alloy that kills any mibrobes that come into contact with its surface. Keep your employees safe by gifting them the key to safely commute through the microbe ladden enviornment to the office. Get a <span style="color:#000;">free trendy mask </span> as well as a <span style="color:#000;">free anti-microbial cleanser fluid</span> which cleans each and every surface of mibrobes. Get this unbelievable offer now at just <strike class="pr-2" style="color:#c7c2c2">RS.2000</strike><span style="color:#000;">RS.600</span> Now.
+                        </p>
+                        <p class="font-barlow-m">Free, fast and reliable delivery accross all states of India powered by Delhivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-danger" style="text-align:center;">
+            <div class="container d-flex justify-content-center">
+                <div class="col-5 color-white text-left">
+                    <h1 class="font-barlow-eb p-3 mb-0">Gift Your Employees 
+                    their <span class="font-saman">Key</span> to Safety</h1>
+                </div>
+                <div class="col-5">
+                    <img src="images/office_job_interview-759.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <button type="button" onclick="location.href='checkout'" class="btn btn-outline-light btn-rounded font-barlow-m waves-effect waves-light" style="margin-top:34px;border:2px solid;font-size:16px;">GET QUOTE NOW </button>
+                </div>
+           </div>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small mdb-color pt-4">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">        
+                <!-- Footer links -->
+                <div class="row text-center text-md-left mt-5 pb-5">        
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Signup for Email Alert</h6>
+                        <div class="bg-light p-4">
+                            <p>Subscribe for latest articles and resources</p>
+                            <div class="form-group has-feedback">
+                                <input style="position:relative;" class="form-control "  name="email"  type="text"   placeholder="Enter Email" >
+                                <a href="#"><span style="position:absolute;right:50px;top:118px;color:#dc3545;" class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid column -->        
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p>
+                            <a class="color-black" href="#!">MDBootstrap</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">MDWordPress</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">BrandFlow</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Bootstrap Angular</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->        
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                        <p>
+                            <a class="color-black" href="#!">Your Account</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Help</a>
+                        </p>
+                    </div>        
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fa fa-phone mr-3 color-danger"></i> +91 9876543210</p>
+                        <p><i class="fa fa-envelope-open mr-3 color-danger"></i> info@gmail.com</p>
+                        <p><i class="fa fa-map-marker mr-3 color-danger"></i> New York, NY 10012, US</p>
+                    </div>
+                    <!-- Grid column -->        
+                </div>
+                <!-- Footer links -->        
+            </div>  
+            <div class="container-fluid bg-danger"> 
+                <div class="container color-white text-center">        
+                    <!-- Grid row -->
+                    <div class="row d-flex p-3">        
+                        <!-- Grid column -->
+                        <div class="col-md-7 col-lg-8">        
+                            <!--Copyright-->
+                            <p class="m-0 text-center text-md-left">&copy; 2020 Copyright:
+                                <a class="color-white" href="#"> LayerDrops.com</a>
+                            </p>        
+                        </div>
+                        <!-- Grid column -->        
+                            <!-- Grid column -->
+                            <div class="col-md-5 col-lg-4 ml-lg-0">        
+                                <!-- Social buttons -->
+                                <div class="text-center">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-facebook-square"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>        
+                            </div>
+                            <!-- Grid column -->        
+                    </div>
+                    <!-- Grid row -->  
+                </div>     
+            </div>
+            <!-- Footer Links -->        
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <!-- mobile view -->
+    <div class="d-lg-none">
+        <!-- header -->
+        <div class="fixed-top" style="padding: 50px 0px;background-image:url(images/background-pic.png);outline:none;">
+            <header>
+                <div class="position-fixed h-100 w-100"
+                    style="opacity: 1; backdrop-filter: blur(8px); z-index: 16; display: none; top: 0px;" id="drawer">
+                    <div class="container h-100 w-100 pr-0">
+                        <div class="row h-100 w-100 mr-0 position-absolute">
+                            <div class="col-2 d-flex justify-content-end pt-5 pl-0" id="cross"
+                                style="padding-right: 15px !important;">
+                                <div id="mobile-cross">
+                                    <p class="m-0" style="font-size: 30px;color:#fff;">X</p>
+                                </div>
+                            </div>
+                            <div class="col-10 position-relative"
+                                style="background: #0505055c 0% 0% no-repeat padding-box;">
+                                <div class="position-absolute w-100" style="top:35%;">
+                                    <p class="footer-text font-weight-light text-center"
+                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#dc3545;"
+                                        onclick="window.location = '/'">Home</p>
+                                    <p class="footer-text font-weight-light text-center"
+                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
+                                        onclick="window.open('https://www.finstreet.in/about-me/','_blank')">About</p>
+                                    <p class="footer-text font-weight-light text-center"
+                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
+                                        onclick="window.open('https://www.finstreet.in/contact/','_blank')">Contact</p>
+                                    <p class="footer-text font-weight-light text-center"
+                                        style="font-size: 30px;margin-bottom:10px;font-family: europhonic;color:#fff;"
+                                        onclick="window.location = 'user-login'">Login</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-container">
+                    <div id="mobile-navbar">
+                        <div style="position: fixed;right: 20px;margin-top: -26px;z-index:15 !important;" id="open-drawer">
+                            <hr style="width: 40px;height: 4px;background-color: white;margin-top: 10px;margin-bottom: 0px;border-radius: 100px;">
+                            <hr style="width: 30px;height: 4px;background-color: white;margin-top: 10px;margin-bottom: 0px;border-radius: 100px;margin-left: 9px;">                            
+                        </div>
+                        <div class="d-flex position-fixed align-items-center w-100"
+                            style="z-index: 10;margin-top: -30px;margin-left: 15px;">
+                            <a class="navbar-brand header-text color-white" id="mobile-header-logo-text" href="/"> NavBar</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- Page Content -->
+        <div class="container-fluid" style="margin-top:99px;background-image:url(images/background-pic.png);height:260px;background-size:cover;">
+            <div class="container">
+                <div class="col-md-12" style="padding-top:80px !important;padding:20px 0px;display:flex;justify-content:center;">
+                    <div class="col-12" style="background-color:#A8A8A8;height:180px;border-radius:10px;">
+
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <!-- content 1 -->
+        <div class="container d-flex justify-content-center" style="background-color:#2F3549;padding:20px 0px;">
+            <div class="col-10">
+                <div class="d-flex justify-content-center">
+                    <p style="font-size:25px;padding-top:5px;margin-bottom:0px;">
+                        <span class="font-montserrat-b" id="price-mobile" style="color:#fff;font-size:40px;">&#x20B9; 1,997</span> 
+                        <span class="font-roboto-m" style="color:#C5C5C5;font-size:20px;"><span class="strike-mobile"><strike style="display: none;"><b>&#x20B9; 12,800</b></strike> 97% off </span></span>
+                    </p>
+                </div>
+                <div>
+                    <a data-toggle="modal" data-target="#razorpay" class="btn-green btn-block caps cursor-pointer" style="padding:10px;background-color:#dc3545;border-radius:10px;color:#fff;font-size:20px;text-align:center;">Buy
+                        Tickets</a>
+                </div>
+                <div class="color-white mt-3" style="background-color:#434D6E;padding:30px;border-radius:10px;">
+                    <ul class="font-roboto-r" style="font-size:14px;padding:0 0 0 14px;margin-bottom:0 !important;">
+                        <li>Start Date: May 15th, 2020, 6 p.m.</li>
+                        <li>End Date: May 17th, 2020, 8 p.m.</li>
+                        <li>Lecture timings: 6 p.m. - 8 p.m.</li>
+                        <li>Venue: Online Event</li>
+                        <li>Language: Hindi</li>
+                    </ul>
+                </div>
+                <div class="couponDiv mt-3" style="font-size:20px;">
+                    <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" style="padding:15px;background:#dc3545 0% 0% no-repeat padding-box;border-radius:10px;">
+                        <p class="font-roboto-l" style="font-size:20px;color:#fff;margin-bottom:0px;text-align:left;">Have a Coupon Code?</p> 
+                        <div class="couponDiv" style="display:flex;font-size:15px;">
+                            <input type="text" name="coupon-mobile" id="in-mobile" class="coupon font-roboto-r" title="Enter coupon" style="border-radius:5px;border:2px solid #dc3545;text-align:center;margin-right:10px;">
+                            <a onclick="validate()" id="err-mobile" class="font-roboto-r btn-green btn-block caps" style="padding:10px;background-color:#dc3545;border:2px solid #FFFFFF;border-radius:5px;color:#fff;font-size:15px;text-align:center;cursor:pointer;">Apply</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="applied-mobile" style="padding: 10px; display: none;">
+                    <a class="btn-green btn-block caps" style="border-radius:10px;color: #fff;font-size:20px;text-align:left;"><span id="code">EARLYBIRD70</span> Coupon Applied</a>
+                    <div class="position-absolute" style="right:7px;margin-top: -41px;">
+                        <div style="border-radius: 100px;width: 50px;height: 50px;color: #3c4792;font-size: 10px;" class="d-flex justify-content-center align-items-center cursor-pointer coupon-code-applied-cross-mobile">
+                            <p class="m-0" style="font-size:30px;transform:rotate(40deg);">+</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center" style="background-color:#2F3549;padding:20px 0px;margin-top:-2px;">
+            <div class="col-10">
+                <p class="font-montserrat-m m-0 text-uppercase" style="padding:10px;color:#fff;text-align:center;font-size:20px;">description</p>
+                <div class="link">                        
+                    <p class="font-roboto-r" style="color:#FFF;font-size:16px;text-align:justify;">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br><br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    </p>    
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center" style="background-color:#2F3549;padding:20px 0px;margin-top:-2px;">
+            <div class="col-10">
+                <p class="font-montserrat-m m-0 pb-0 text-uppercase" style="padding: 30px 0;color:#fff;text-align:center;font-size:20px;">Why choose this course?</p>
+                <div class="link">
+                    <p class="font-roboto-r pt-2" style="color:#FFF;font-size:16px;text-align:justify;">
+                        I've been mentoring a lot of budding musicians regarding how to make money in this industry and there was not even a single course for Indian musicians which I could recommend. <br><br>So, I decided to come up with this course which is -
+                    </p>
+                    <div class="row d-flex pt-3">
+                        <div class="col-2">
+                            <img src="images/tone.svg" alt="">
+                        </div>
+                        <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size:16px;">
+                            <em>Totally unique course explaining you how to earn through music</em>
+                        </div>
+                    </div>
+                    <div class="row d-flex pt-3">
+                        <div class="col-2" >
+                            <img src="images/mic.svg" alt="">
+                        </div>
+                        <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size: 16px;">
+                            <em>Focus towards Indian music industry.</em>
+                        </div>
+                    </div>
+                    <div class="row d-flex pt-3">
+                        <div class="col-2">
+                            <img src="images/music.svg" alt="">
+                        </div>
+                        <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size:16px;">
+                            <em>Detailed insights, experience based course not a textbook one</em>
+                        </div>
+                    </div>
+                    <div class="row d-flex pt-3">
+                        <div class="col-2">
+                            <img src="images/mic2.svg" alt="">
+                        </div>
+                        <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size:16px;">
+                            <em>Designed keeping Independent (Indie) artists in my mind as well</em>
+                        </div>
+                    </div>
+                    <div class="row d-flex pt-3">
+                        <div class="col-2">
+                            <img src="images/headphone.svg" alt="">
+                        </div>
+                        <div class="col-8 color-white font-roboto-r ml-4" style="padding: 5px 0;font-size:16px;">
+                            <em>Legalities like profit distribution, royalties</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small mdb-color pt-4">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">        
+                <!-- Footer links -->
+                <div class="row text-center text-md-left mt-5 pb-5">        
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Signup for Email Alert</h6>
+                        <div class="bg-light p-4">
+                            <p>Subscribe for latest articles and resources</p>
+                            <div class="form-group has-feedback">
+                                <input style="position:relative;" class="form-control "  name="email"  type="text"   placeholder="Enter Email" >
+                                <a href="#"><span style="position:absolute;right:50px;top:118px;color:#dc3545;" class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid column -->        
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p>
+                            <a class="color-black" href="#!">MDBootstrap</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">MDWordPress</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">BrandFlow</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Bootstrap Angular</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->        
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                        <p>
+                            <a class="color-black" href="#!">Your Account</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a class="color-black" href="#!">Help</a>
+                        </p>
+                    </div>        
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">        
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 font-barlow-m">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fa fa-phone mr-3 color-danger"></i> +91 9876543210</p>
+                        <p><i class="fa fa-envelope-open mr-3 color-danger"></i> info@gmail.com</p>
+                        <p><i class="fa fa-map-marker mr-3 color-danger"></i> New York, NY 10012, US</p>
+                    </div>
+                    <!-- Grid column -->        
+                </div>
+                <!-- Footer links -->        
+            </div>  
+            <div class="container-fluid bg-danger"> 
+                <div class="container color-white text-center">        
+                    <!-- Grid row -->
+                    <div class="row d-flex p-3">        
+                        <!-- Grid column -->
+                        <div class="col-md-7 col-lg-8">        
+                            <!--Copyright-->
+                            <p class="m-0 text-center text-md-left">&copy; 2020 Copyright:
+                                <a class="color-white" href="#"> LayerDrops.com</a>
+                            </p>        
+                        </div>
+                        <!-- Grid column -->        
+                            <!-- Grid column -->
+                            <div class="col-md-5 col-lg-4 ml-lg-0">        
+                                <!-- Social buttons -->
+                                <div class="mb-2 mt-2 text-center">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-facebook-square"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>        
+                            </div>
+                            <!-- Grid column -->        
+                    </div>
+                    <!-- Grid row -->  
+                </div>     
+            </div>
+            <!-- Footer Links -->        
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        // images slider
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+
+        // quantity js
+        jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+        jQuery('.quantity').each(function() {
+        var spinner = jQuery(this),
+            input = spinner.find('input[type="number"]'),
+            btnUp = spinner.find('.quantity-up'),
+            btnDown = spinner.find('.quantity-down'),
+            min = input.attr('min'),
+            max = input.attr('max');
+
+        btnUp.click(function() {
+            var oldValue = parseFloat(input.val());
+            if (oldValue >= max) {
+            var newVal = oldValue;
+            } else {
+            var newVal = oldValue + 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
+
+        btnDown.click(function() {
+            var oldValue = parseFloat(input.val());
+            if (oldValue <= min) {
+            var newVal = oldValue;
+            } else {
+            var newVal = oldValue - 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
+
+        });
+        </script>
+</body>
+
+</html>
