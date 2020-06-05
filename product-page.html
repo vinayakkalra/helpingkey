@@ -444,9 +444,40 @@
                 <div class="row d-flex pt-3">
                     <div class="col-6">
                         <h1 class="font-barlow-b pt-5" style="font-size:28px;">Over 1,372 Happy Customers and counting...</h1>
+                        <div class="d-flex mt-3">
+                            <h4 class="font-barlow-m p-1">Sort By</h4>
+                            <div class="form-group mb-0" style="width: 168px;">
+                                <select class="bg-danger color-white ml-3" style="padding:5px;border: 1px solid #dc3545;border-radius:15px;-webkit-appearance:menulist !important;-moz-appearance:menulist !important;">
+                                    <option>MOST POPULAR</option>
+                                    <option>MOST POPULAR</option>
+                                    <option>MOST POPULAR</option>
+                                </select>
+                            </div>
+                        </div>  
+                        <!--  -->
                     </div>
                     <div class="col-6">
                         <h1 class="font-barlow-b pt-5" style="font-size:28px;">Add Review</h1>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Review"></textarea>
+                        </div>
+                        <div class="d-inline">
+                            <span class="font-barlow-m"> Your Ratings: </span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star"></span>
+                            <button type="button" onclick="location.href='checkout'" class="btn btn-danger btn-rounded font-barlow-m waves-effect waves-light" style="border:2px solid;font-size:20px;padding:12px 35px;margin-left:9rem;"> ADD REVIEW </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -486,7 +517,7 @@
                             <p>Subscribe for latest articles and resources</p>
                             <div class="form-group has-feedback">
                                 <input style="position:relative;" class="form-control "  name="email"  type="text"   placeholder="Enter Email" >
-                                <a href="#"><span style="position:absolute;right:50px;top:118px;color:#dc3545;" class="fa fa-envelope"></span></a>
+                                <a href="#"><span style="position:absolute;right:54px;top:126px;color:#dc3545;" class="fa fa-envelope"></span></a>
                             </div>
                         </div>
                     </div>
@@ -762,7 +793,7 @@
                             <p>Subscribe for latest articles and resources</p>
                             <div class="form-group has-feedback">
                                 <input style="position:relative;" class="form-control "  name="email"  type="text"   placeholder="Enter Email" >
-                                <a href="#"><span style="position:absolute;right:50px;top:118px;color:#dc3545;" class="fa fa-envelope"></span></a>
+                                <a href="#"><span style="position:absolute;right:54px;top:126px;color:#dc3545;" class="fa fa-envelope"></span></a>
                             </div>
                         </div>
                     </div>
@@ -871,65 +902,65 @@
     <script>
         // images slider
         var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("demo");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-        }
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
 
         // quantity js
         jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
-        jQuery('.quantity').each(function() {
-        var spinner = jQuery(this),
-            input = spinner.find('input[type="number"]'),
-            btnUp = spinner.find('.quantity-up'),
-            btnDown = spinner.find('.quantity-down'),
-            min = input.attr('min'),
-            max = input.attr('max');
+            jQuery('.quantity').each(function () {
+                var spinner = jQuery(this),
+                    input = spinner.find('input[type="number"]'),
+                    btnUp = spinner.find('.quantity-up'),
+                    btnDown = spinner.find('.quantity-down'),
+                    min = input.attr('min'),
+                    max = input.attr('max');
 
-        btnUp.click(function() {
-            var oldValue = parseFloat(input.val());
-            if (oldValue >= max) {
-            var newVal = oldValue;
-            } else {
-            var newVal = oldValue + 1;
-            }
-            spinner.find("input").val(newVal);
-            spinner.find("input").trigger("change");
-        });
+                btnUp.click(function () {
+                    var oldValue = parseFloat(input.val());
+                    if (oldValue >= max) {
+                        var newVal = oldValue;
+                    } else {
+                        var newVal = oldValue + 1;
+                    }
+                    spinner.find("input").val(newVal);
+                    spinner.find("input").trigger("change");
+                });
 
-        btnDown.click(function() {
-            var oldValue = parseFloat(input.val());
-            if (oldValue <= min) {
-            var newVal = oldValue;
-            } else {
-            var newVal = oldValue - 1;
-            }
-            spinner.find("input").val(newVal);
-            spinner.find("input").trigger("change");
-        });
+                btnDown.click(function () {
+                    var oldValue = parseFloat(input.val());
+                    if (oldValue <= min) {
+                        var newVal = oldValue;
+                    } else {
+                        var newVal = oldValue - 1;
+                    }
+                    spinner.find("input").val(newVal);
+                    spinner.find("input").trigger("change");
+                });
 
-        });
+            }); 
         </script>
 </body>
 
