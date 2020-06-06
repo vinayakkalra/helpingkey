@@ -18,6 +18,14 @@
     font-family: barlow-eb;
 }
 @font-face {
+    font-family: barlow-sb;
+    src: url(../fonts/Barlow-SemiBold.ttf);
+    font-display: swap;
+}
+.font-barlow-sb {
+    font-family: barlow-sb;
+}
+@font-face {
     font-family: barlow-m;
     src: url(../fonts/Barlow-Medium.ttf);
     font-display: swap;
