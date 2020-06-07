@@ -258,7 +258,7 @@
                 <div class="col-6">
                     <h7 class="font-barlow-m" style="color:slategray;">Returning Customer? <span class="color-danger"> Click Here To Login</span></h7>
                     <h1 class="font-barlow-b pb-4">Billing Details</h1>
-                    <form class="font-barlow-m">
+                    <div class="font-barlow-m">
                         <div class="form-group">
                             <select class="minimal bg-light border-light form-control" id="country" name="country">
                                 <option value="0">Select a Country </option>
@@ -512,57 +512,57 @@
                         </div>
                         <div class="row form-group">
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="First name">
+                                <input type="text" class="bg-light border-light form-control" id="first-name" placeholder="First name">
                             </div>
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="Last name">
+                                <input type="text" class="bg-light border-light form-control" id="last-name" placeholder="Last name">
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="bg-light border-light form-control" id="exampleInputPassword1" placeholder="Company">
+                            <input type="text" class="bg-light border-light form-control" id="company" placeholder="Company">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="bg-light border-light form-control" id="exampleInputPassword1" placeholder="Address">
+                            <input type="text" class="bg-light border-light form-control" id="address" placeholder="Address">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="bg-light border-light form-control" id="exampleInputPassword1" placeholder="Appartment, Unit, etc. (optional)">
+                            <input type="text" class="bg-light border-light form-control" id="appartment" placeholder="Appartment, Unit, etc. (optional)">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="bg-light border-light form-control" id="exampleInputPassword1" placeholder="Town / City">
+                            <input type="text" class="bg-light border-light form-control" id="towncity" placeholder="Town / City">
                         </div>
                         <div class="row form-group">
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="State">
+                                <input type="text" class="bg-light border-light form-control" id="state" placeholder="State">
                             </div>
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="Zip Code">
+                                <input type="text" class="bg-light border-light form-control" id="zipCode" placeholder="Zip Code">
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="Email Address">
+                                <input type="text" class="bg-light border-light form-control" id="email" placeholder="Email Address">
                             </div>
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="Phone">
+                                <input type="text" class="bg-light border-light form-control" id="phone" placeholder="Phone">
                             </div>
                         </div>
                         <div class="form-check form-group">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" onchange="hide(this);">
                             <label class="form-check-label" for="defaultCheck1" style="color:slategray;">
                                 Create an Account?
                             </label>
                         </div>                        
-                        <div class="row form-group">
+                        <div class="row form-group" id="pass" style="visibility:hidden;">
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="Enter Password">
+                                <input type="text" class="bg-light border-light form-control" id="password" placeholder="Enter Password">
                             </div>
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="Confirm Password">
+                                <input type="text" class="bg-light border-light form-control" id="confirm_password" placeholder="Confirm Password">
                             </div>
                         </div>
-                    </form>   
-                    <h1 class="font-barlow-b pb-4">Your Order</h1>
-                    <div class="row form-group">
+                    </div>   
+                    <h1 class="pt-4 font-barlow-b pb-4">Your Order</h1>
+                    <div class="row form-group">    
                         <div class="col">
                             <div class="couponDiv font-barlow-m" style="display:flex;font-size:1rem;">
                                 <input type="text" name="coupon" id="in" class="coupon" title="Enter coupon"
@@ -586,15 +586,15 @@
                 <div class="col-6">
                     <br>
                     <h1 class="font-barlow-b pb-4">Ship to a Different Address</h1>
-                    <form class="font-barlow-m">
+                    <div class="font-barlow-m">
                         <div class="form-check form-group">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" name="check1" onchange="copyTextValue(this);">
                             <label class="form-check-label" for="defaultCheck1" style="color:slategray;">
                                 If Shipping address same as billing address ?
                             </label>
                         </div> 
                         <div class="form-group">
-                            <select class="minimal bg-light border-light form-control" id="country" name="country">
+                            <select class="minimal bg-light border-light form-control" id="country1" name="country">
                                 <option value="0">Select a Country </option>
                                 <option value="Afganistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
@@ -846,62 +846,50 @@
                         </div>
                         <div class="row form-group">
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="First name">
+                                <input type="text" class="bg-light border-light form-control" id="first-name1" placeholder="First name">
                             </div>
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="Last name">
+                                <input type="text" class="bg-light border-light form-control" id="last-name1" placeholder="Last name">
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="bg-light border-light form-control" id="exampleInputPassword1" placeholder="Company">
+                            <input type="text" class="bg-light border-light form-control" id="company1" placeholder="Company">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="bg-light border-light form-control" id="exampleInputPassword1" placeholder="Address">
+                            <input type="text" class="bg-light border-light form-control" id="address1" placeholder="Address">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="bg-light border-light form-control" id="exampleInputPassword1" placeholder="Appartment, Unit, etc. (optional)">
+                            <input type="text" class="bg-light border-light form-control" id="appartment1" placeholder="Appartment, Unit, etc. (optional)">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="bg-light border-light form-control" id="exampleInputPassword1" placeholder="Town / City">
+                            <input type="text" class="bg-light border-light form-control" id="towncity1" placeholder="Town / City">
                         </div>
                         <div class="row form-group">
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="State">
+                                <input type="text" class="bg-light border-light form-control" id="state1" placeholder="State">
                             </div>
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" placeholder="Zip Code">
+                                <input type="text" class="bg-light border-light form-control" id="zipCode1" placeholder="Zip Code">
                             </div>
                         </div>
+                        <!-- <div class="row form-group">
+                            <div class="col">
+                                <input type="text" class="bg-light border-light form-control" id="email1" placeholder="Email Address">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="bg-light border-light form-control" id="phone1" placeholder="Phone">
+                            </div>
+                        </div> -->
                         <div class="form-group">
-                            <textarea class="bg-light border-light form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Notes about your order, e.g special note for delivery"></textarea>
+                            <textarea class="bg-light border-light form-control" id="special-note" rows="3" placeholder="Notes about your order, e.g special note for delivery"></textarea>
                           </div>
-                    </form>  
+                    </div>  
                 </div>
             </div>  
             <div class="container-fluid">
-                <div class="container d-flex" style="border-radius:10px;top:5px;display:none;" class="order-success">
-                    <div style="border-radius:10px;top:5px;display:none;" class="bg-white shadow-buy-now-button-1 position-relative">
-                        <h2 class="font-roboto-b m-0 mb-2 text-capitalize text-center"
-                            style="font-size: 40px;padding-top:30px;">User Already Exist</h2>
-                        <h2 class="font-poppins-regular m-0 mb-2 text-center" style="font-size:20px;padding:10px;">Your Already paid for this Course</h2>
-                        <div class="px-5">
-                            <hr>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <p class="para font-poppins-regular"
-                                    style="text-align:center;padding-top:10px;padding-bottom:20px;margin:1px auto !important;">
-                                    Please used your credentials for login, Click on given login button
-                                </p>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center" style="padding-bottom: 60px;">
-                                <a class="cursor-pointer text-uppercase font-roboto-b shadow-buy-now-button buy-now-button backToShop"
-                                    onclick="window.location = 'user-login'">Login Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="container d-flex pt-3">
                     <div class="col-6">
-                        <div class="row form-group">
+                        <div class="row form-group pt-2">
                             <table class="font-barlow-m" style="text-align:left;width:100%;border-collapse:separate;overflow:hidden;">
                                 <thead>
                                     <tr>
@@ -945,7 +933,7 @@
                                     <tr class="cart-subtotal">
                                         <td>Gifting Wrapping</td>
                                         <td style="text-align: end;"><strong>
-                                                <span>&#8377;<span class="modalSubtotal">50</span></span>
+                                                <span>&#8377;<span class="giftPrice">00</span></span>
                                             </strong>
                                         </td>
                                     </tr>
@@ -964,19 +952,19 @@
                     <div class="bg-light col-5 ml-auto pt-4 pl-5">
                         <form class="font-barlow-m">
                             <div class="form-check form-group">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <input class="form-check-input" type="checkbox" value="" onchange="wrap_price(this);" id="Checkbox">
                                 <h6 class="form-check-label" for="defaultCheck1" style="font-weight:bolder;">Add Premium Gift Wraping for just RS. 50</h6>
                                 <br>
                                 <h8 style="color:slategray">For just RS. 50, Send a Gift Wrapped Package, Along with a Special Note</h8>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Start typing your special message here..."></textarea>
+                                <textarea class="form-control" id="giftWrap" rows="2" placeholder="Start typing your special message here..."></textarea>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="container d-flex justify-content-end pt-5">
-                    <button class="btn btn-danger">Place your order powered By Razorpay</button>
+                    <button id="razorpaycheckout" class="btn btn-danger">Place your order powered By Razorpay</button>
                 </div>
             </div>
         </div>

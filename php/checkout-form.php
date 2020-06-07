@@ -2,7 +2,7 @@
 
 require_once 'link.php';
 
-if(isset($_POST['productName']) == 'productName'){
+if(isset($_POST['country']) == 'country'){
 
     $data = array();  
     $from_ip = $_SERVER['REMOTE_ADDR'];
@@ -10,16 +10,34 @@ if(isset($_POST['productName']) == 'productName'){
     date_default_timezone_set("Asia/Calcutta");
     $date_now = date("r");
 
-    $name = mysqli_real_escape_string($link, $_POST['name']) ;
+    $country =mysqli_real_escape_string($link, $_POST['country']);
+    $fname = mysqli_real_escape_string($link, $_POST['fname']) ;
+    $lname = mysqli_real_escape_string($link, $_POST['lname']) ;
+    $company = mysqli_real_escape_string($link,$_POST['company']);    
+    $address = mysqli_real_escape_string($link,$_POST['address']);
+    $appartment = mysqli_real_escape_string($link,$_POST['appartment']);
+    $towncity = mysqli_real_escape_string($link,$_POST['towncity']);
+    $state = mysqli_real_escape_string($link,$_POST['state']);
+    $zipCode = mysqli_real_escape_string($link,$_POST['zipCode']);
     $phone = mysqli_real_escape_string($link,$_POST['phone']);
     $email = mysqli_real_escape_string($link,$_POST['email']);
-    $country =mysqli_real_escape_string($link, $_POST['country']);
-    $address = mysqli_real_escape_string($link,$_POST['address']);
-    $state = mysqli_real_escape_string($link,$_POST['state']);
-    $postcode = mysqli_real_escape_string($link,$_POST['postcode']);
-    $other_details =mysqli_real_escape_string($link, $_POST['other_details']);
+    $country1 =mysqli_real_escape_string($link, $_POST['country1']);
+    $fname1 = mysqli_real_escape_string($link, $_POST['fname1']) ;
+    $lname1 = mysqli_real_escape_string($link, $_POST['lname1']) ;
+    $company1 = mysqli_real_escape_string($link,$_POST['company1']);    
+    $address1 = mysqli_real_escape_string($link,$_POST['address1']);
+    $appartment1 = mysqli_real_escape_string($link,$_POST['appartment1']);
+    $towncity1 = mysqli_real_escape_string($link,$_POST['towncity1']);
+    $state1 = mysqli_real_escape_string($link,$_POST['state1']);
+    $zipCode1 = mysqli_real_escape_string($link,$_POST['zipCode1']);
+    $special_note =mysqli_real_escape_string($link, $_POST['special_note']);
     $productName = mysqli_real_escape_string($link,$_POST['productName']);
     $amount = mysqli_real_escape_string($link,$_POST['amount']);
+    $discount = mysqli_real_escape_string($link,$_POST['discount']);
+    $giftWrap = mysqli_real_escape_string($link,$_POST['giftWrap']);
+    $password = mysqli_real_escape_string($link,$_POST['password']);
+    $hashed_password = hash("sha512", $password);
+    
     $referral_id = "";
     if(isset($_POST["referral_id"])){
         $referral_id = mysqli_real_escape_string($link, $_POST["referral_id"]);
@@ -27,8 +45,6 @@ if(isset($_POST['productName']) == 'productName'){
     if(isset($_POST["coupon_code"])){
         $coupon_code = mysqli_real_escape_string($link, $_POST["coupon_code"]);
     }
-    $password = mysqli_real_escape_string($link, $_POST['password']);
-    $hashed_password = hash("sha512", $password);
 
     if($phone == ""){
         $phone = 0;
@@ -36,8 +52,11 @@ if(isset($_POST['productName']) == 'productName'){
     if($amount == ""){
         $amount = 0;
     }
-    if($postcode == ""){
-        $postcode = 0;
+    if($zipCode == ""){
+        $zipCode = 0;
+    }
+    if($zipCode1 == ""){
+        $zipCode1 = 0;
     }
 
     $id = 0;
@@ -54,8 +73,8 @@ if(isset($_POST['productName']) == 'productName'){
 		    echo json_encode(array(
                 "status"=>701
             ));
-        }else{        
-            $query = "INSERT INTO `orders_razorpay` (`id`, `name`, `phone`, `email`, `country`, `address`, `state`, `postcode`, `other_details`, `productName`, `amount`, `coupon_code`, `date_now`, `from_ip`, `from_browser`, `status`, `referral_id` ,`password`) VALUES ('$id','$name', '$phone', '$email', '$country', '$address', '$state', '$postcode' , '$other_details', '$productName', '$amount','$coupon_code','$date_now','$from_ip', '$from_browser','processing', '$referral_id' ,'$hashed_password')";
+        }else{      
+            $query = "INSERT INTO `orders_razorpay` (`id`, `country`, `fname`, `lname`, `company`, `address`, `appartment`, `towncity`, `state`, `zipCode`, `phone`, `email`, `password`, `country1`, `fname1`, `lname1`, `company1`, `address1`, `appartment1`, `towncity1`, `state1`, `zipCode1`, `special_note`,`giftWrap`, `productName`, `amount`, `referral_id`, `coupon_code`, `discount`, `from_ip`, `from_browser`, `status`) VALUES ('$id', '$country', '$fname', '$lname', '$company', '$address', '$appartment', '$towncity', '$state', '$zipCode', '$phone', '$email', '$password', '$country1', '$fname1', '$lname1', '$company1', '$address1', '$appartment1', '$towncity1', '$state1', '$zipCode1', '$special_note','$giftWrap', '$productName', '$amount', '$referral_id', '$coupon_code', '$discount', '$from_ip', '$from_browser', 'processing')";  
 
             // echo $query;
             

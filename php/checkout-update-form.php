@@ -18,12 +18,12 @@ if(isset($_POST['razorpay_payment_id']) == 'razorpay_payment_id'){
     $product_description = "";
     $body = "";
     $custom_string = "";
-    $email="promotions@thetopcontroller.com";
-    if(!isset($_POST['email'])){
-        $email="promotions@thetopcontroller.com";
-    } else{
-        $email = $_POST['email'];
-    }
+    // $email="promotions@thetopcontroller.com";
+    // if(!isset($_POST['email'])){
+    //     $email="promotions@thetopcontroller.com";
+    // } else{
+    //     $email = $_POST['email'];
+    // }
     
     $query = "UPDATE `orders_razorpay` SET `status` = 'paid', `razorpay_payment_id` = '$razorpay_payment_id' WHERE `id` = $id ";
     
