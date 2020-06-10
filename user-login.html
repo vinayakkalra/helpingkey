@@ -25,9 +25,22 @@
     <title>User Login | Finstreet | India's 1st ever Financial Freedom Coach</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/cropped-Fin-270x270.jpg">
+    <!-- <link rel="icon" href="images/cropped-Fin-270x270.jpg"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <style type="text/css">
+        .card {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-clip: border-box;
+            border-radius: .25rem;
+            background-color:#fff;
+            border: 0px #fff;
+        }
         .divider-text {
             position: relative;
             text-align: center;
@@ -57,6 +70,26 @@
         .btn-twitter {
             background-color: #42AEEC;
             color: #fff;
+        }
+        .input-group-text{
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            color:#000;
+        }
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(2.5em + 0.75rem + 2px);
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #000!important;
+            background-color: #f8f9fa !important;
+            background-clip: padding-box;
+            border: 1px solid #f8f9fa!important;
+            border-radius: 0px;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
         }
     </style>
     
@@ -90,42 +123,48 @@
     
     <div class="d-none d-lg-block">
         <!-- Navigation -->
-        <div class="fixed-top" style="padding:20px 0px;background-color:#00abc9;outline:none;">
-            <nav class="navbar navbar-expand-lg navbar-dark static-top">
-                <div class="container">
-                    <a class="navbar-brand" href="/">
-                        <img src="images/logo.png" alt="" width="133" height="50">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto font-roboto-b" style="font-size: 18px;font-weight:bold;">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link cursor-pointer text-white" href="signup">Signup</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="login">Login</a>
-                            </li> -->
-                        </ul>
+        <nav class="d-flex justify-content-center navbar bg-danger font-barlow-r">
+            <h6 class="color-white m-0">DUE TO HIGH DEMAND WE ARE LIMITING THE PURCHASE OF ONLY 10 PIECES PER ORDER</h6>                
+        </nav>
+        <nav class="navbar navbar-expand-lg color-black font-barlow-r">
+            <div class="container-fluid">
+                <div class="container" style="padding:10px;">
+                    <div class="col-2 border-right text-center">
+                        <a class="navbar-brand color-black" href="/">Helping <span class="font-saman">Key</span>&#8482;</a>
+                    </div>   
+                    <div class="col-8 border-right">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="ml-auto mr-auto navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link color-black" href="/">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-black" href="for-companies">For Companies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-black" href="affiliate">Earn with us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-black" href="user-login">Login/Signup</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color-black" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2 text-center">
+                        <h7><i class="fa fa-phone"></i> +91 9876543210</h7>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
         <!-- Page Content -->
-        <div class="container mb-5" style="margin-top: 150px;">
-        
-            <div class="card bg-light">
+        <div class="container" style="margin-top:50px;">
+            <div class="card">
                 <article class="card-body mx-auto" style="max-width: 400px;">
                     <h4 class="card-title mt-3 text-center">User Login</h4>
-                    <form>
-                        
+                    <form>                        
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
@@ -141,10 +180,10 @@
                         </div> <!-- form-group// -->
                         
                         <div class="form-group">
-                            <button type="submit" id="login" class="btn btn-primary btn-block">Login</button>
+                            <button type="submit" id="login" class="btn btn-danger btn-block">Login</button>
                         </div> <!-- form-group// -->
                         <p class="text-center" style="font-size: 14px;"><a href="user-forgot-password">Forgot Password?</a> </p>
-                        <p class="text-center">Do not have an account? Purchase the Course now <a href="checkout">Buy Now</a> </p>
+                        <p class="text-center">Do not have an account? Purchase the key now <a href="product-page">Buy Now</a> </p>
                     </form>
                 </article>
             </div> <!-- card.// -->
