@@ -1,8 +1,8 @@
 
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteCond %{HTTP_HOST} ^(helpingkey\.)?finstreet\.in
-RewriteRule ^(.*)$ https://helpingkey.finstreet.in/$1 [R,L]
+RewriteCond %{HTTP_HOST} ^(www\.)?helpingkey\.com
+RewriteRule ^(.*)$ https://www.helpingkey.com/$1 [R,L]
 
 #remove html file extension-e.g. https://example.com/file.html will become https://example.com/file
  

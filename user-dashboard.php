@@ -129,7 +129,7 @@ if(isset($_SESSION['useremail'])){
         })(window,document,'script','dataLayer','GTM-PFRW8HP');</script>
         <!-- End Google Tag Manager -->
 
-    <title>User Dashboard | Finstreet | India's 1st ever Financial Freedom Coach</title>
+    <title>User Dashboard |  helpingKey | Gift your Loved Ones</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/cropped-Fin-270x270.jpg">

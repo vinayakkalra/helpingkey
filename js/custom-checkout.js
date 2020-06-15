@@ -59,7 +59,8 @@ var referral_id = sessionStorage.getItem('referral_id');
                 }
             }
             var result = "";
-            result.value = parseInt(result.value)*parseInt(valueurl) + gift_wrap;
+            var gift_wrap = "";
+            var total_value = parseInt(result.value)*parseInt(valueurl);
             $.ajax({
                 type: "POST",
                 url: "php/process.php",
@@ -73,20 +74,22 @@ var referral_id = sessionStorage.getItem('referral_id');
                         result = dataResult;
                         $(".applied").css('display', 'block');
                         $('#code').html(result.coupon_code);
+                        $('.buypriceDollar').html(parseInt(2000)*parseInt(valueurl));
                         $('.modaltotal').html(parseInt(result.value)*parseInt(valueurl));
-                        $('#discount').html(result.discount);
+                        $('.modalSubtotal').html(parseInt(result.value)*parseInt(valueurl));
+                        $('.discount').html(result.discount);
                         return true;
                     }
                     else if (dataResult.statusCode == 201) {
                         result = dataResult;
                         $('.modaltotal').html(parseInt(result.value)*parseInt(valueurl));
-                        $('#discount').html(result.discount);
+                        $('.discount').html(result.discount);
                         $(".applied").css('display', 'none');
                     }
                 }
             });
             // console.log(parseInt(result.value)*parseInt(valueurl));
-            result.value = parseInt(result.value)*parseInt(valueurl);
+            // result.value = parseInt(result.value)*parseInt(valueurl);
             function validate() {
                 // $("#err").attr("disabled","true");    
                 if (document.getElementById('in').value != "") {
@@ -105,7 +108,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                                 $(".applied").css('display', 'block');
                                 $('#code').html(result.coupon_code);
                                 $('.modaltotal').html(parseInt(result.value)*parseInt(valueurl));
-                                $('#discount').html(result.discount);
+                                $('.discount').html(result.discount);
                                 alert (result.coupon_code + " has been Successfully Applied");
                                 return true;
                             }
@@ -113,17 +116,11 @@ var referral_id = sessionStorage.getItem('referral_id');
                                 alert("Invalid coupon");
                                 $(".applied").css('display', 'none');
                                 $(".strike").css('display', 'none');
-                                document.getElementById('price').innerHTML = "&#8377;1,997";
-                                $("#price").css('color', '#fff');
                             }
                         }
                     });
                 } else {
                     alert("Invalid coupon");
-                    // result.value = 1997;
-                    // result.discount = 0;
-                    // document.getElementById('price').innerHTML = "&#8377;1,997";
-                    // $("#price").css('color', '#000');
                 }   
 
 
@@ -132,28 +129,29 @@ var referral_id = sessionStorage.getItem('referral_id');
                     document.getElementById('err').innerHTML = "Apply";
                     $(".applied").css('display', 'none');
                     $(".strike").css('display', 'none');
-                    document.getElementById('price').innerHTML = "&#8377;1,997";
-                    $("#price").css('color', '#fff');
                     $("#err").removeClass("disabled");
-                    result.value = 2000;
-                    result.discount = 0;
+                    // result.value = 2000;
+                    // result.discount = 0;
                 });
             }
             
             // add Gift Wraping
-            var gift_wrap ="";
             function wrap_price(){
                 if ($('#Checkbox').is(':checked')) {
-                    $('.giftPrice').html('50');
-                    result.value = parseInt(result.value) + 50;
-                    $('.modaltotal').html(result.value);
+                    $('.giftPrice').html(50*parseInt(valueurl));
+                    // result.value = parseInt(result.value)*parseInt(valueurl);
+                    $('.modaltotal').html(parseInt(result.value)*parseInt(valueurl)+50*parseInt(valueurl));
+                    total_value = parseInt(result.value)*parseInt(valueurl)+50*parseInt(valueurl); 
                 }else{
                     $('.giftPrice').html('00');
-                    result.value = parseInt(result.value) - 50;
-                    $('.modaltotal').html(result.value);
+                    $('.modaltotal').html(parseInt(result.value)*parseInt(valueurl));
+                    total_value = parseInt(result.value)*parseInt(valueurl); 
+                    // $('.modaltotal').html(result.value);
                 }
             }            
-
+            if ($('#Checkbox').is(':checked') == false) {
+                total_value = parseInt(result.value)*parseInt(valueurl); 
+            }
             // validation razorpay 
             $("#razorpaycheckout").on("click", function () {
                 var error = "";
@@ -396,7 +394,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                             special_note:$("#special-note").val(),
                             giftWrap:$("#giftWrap").val(),        
                             productName: "helping-Key",                    
-                            amount: parseInt(result.value)*parseInt(valueurl),
+                            amount: total_value,
                             'referral_id': referral_id,
                             discount: result.discount,
                             'coupon_code': coupon_code
@@ -409,7 +407,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                                 var order_id = data.id;
                                 var options = {
                                     "key": "rzp_test_Deii5btTqdfYUu", // rzp_live_LSedTe83FzVuTe, rzp_test_BAnreND3t2AMOK test key // Enter the Key ID generated from the Dashboard rzp_test_Deii5btTqdfYUu rzp_live_LSedTe83FzVuTe
-                                    "amount": parseInt(parseInt(result.value)*parseInt(valueurl) * 100), // Amount is in currency subunits. Default currency is INR. Hence, 29935 refers to 29935 paise or INR 299.35.    
+                                    "amount": total_value * 100, // Amount is in currency subunits. Default currency is INR. Hence, 29935 refers to 29935 paise or INR 299.35.    
                                     "currency": "INR",
                                     "name": "helpingKey",
                                     "description": "Gift your Loved Ones the KEY to Safety",
@@ -427,7 +425,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                                                 id: data.id,
                                                 productName: "helping-Key",
                                                 razorpay_payment_id: razorpay_payment_id,
-                                                amount: parseInt(result.value)*parseInt(valueurl),
+                                                amount: total_value,
                                                 email: $("#email").val()
                                             },
                                             success: function (data) {
@@ -530,18 +528,20 @@ var referral_id = sessionStorage.getItem('referral_id');
                 document.getElementById("state1-mobile").value = state;
                 document.getElementById("zipCode1-mobile").value = zipCode;
             }
-
+            
             // hide function for account password field  
             var x = document.getElementById("pass-mobile");
             function hide() {                
                 if (x.style.visibility === "visible") {
-                  x.style.visibility = "hidden";
+                x.style.visibility = "hidden";
                 } else {
-                  x.style.visibility = "visible";
+                x.style.visibility = "visible";
                 }
             }
+
             var result = "";
-            result.value = result.value + gift_wrap;
+            var total_value = parseInt(result.value)*parseInt(valueurl);
+
             $.ajax({
                 type: "POST",
                 url: "php/process.php",
@@ -553,31 +553,34 @@ var referral_id = sessionStorage.getItem('referral_id');
                 success: function (dataResult) {
                     if (dataResult.statusCode == 200) {
                         result = dataResult;
-                        $('#price-mobile').html('&#8377; ' + result.value);
                         $(".applied-mobile").css('display', 'block');
                         $('#code-mobile').html(result.coupon_code);
-                        $('.modaltotal').html(result.value);
-                        $('#discount-mobile').html(result.discount);
+                        $('.buypriceDollar').html(parseInt(2000)*parseInt(valueurl));
+                        $('.modaltotal').html(parseInt(result.value)*parseInt(valueurl));
+                        $('.modalSubtotal').html(parseInt(result.value)*parseInt(valueurl));
+                        $('.discount').html(result.discount);
                         return true;
                     }
                     else if (dataResult.statusCode == 201) {
                         result = dataResult;
-                        $('.modaltotal').html(result.value);
-                        $('#discount-mobile').html(result.discount);
+                        $('.modaltotal').html(parseInt(result.value)*parseInt(valueurl));
+                        $('.discount').html(result.discount);
                         $(".applied-mobile").css('display', 'none');
                     }
                 }
             });
+            // console.log(parseInt(result.value)*parseInt(valueurl));
+            // result.value = parseInt(result.value)*parseInt(valueurl);
             function validate() {
                 // $("#err").attr("disabled","true");    
-                if (document.getElementById('in-mobile').value != "") {
+                if (document.getElementById('in').value != "") {
                     $.ajax({
                         type: "POST",
                         url: "php/process.php",
                         'async': false,
                         dataType: "json",
                         data: {
-                            coupon_code: document.getElementById('in-mobile').value,
+                            coupon_code: document.getElementById('in').value,
                             type: "coupon"
                         },
                         success: function (dataResult) {
@@ -585,55 +588,52 @@ var referral_id = sessionStorage.getItem('referral_id');
                                 result = dataResult;
                                 $(".applied").css('display', 'block');
                                 $('#code-mobile').html(result.coupon_code);
-                                $('.modaltotal').html(result.value);
-                                $('#discount-mobile').html(result.discount);
+                                $('.modaltotal').html(parseInt(result.value)*parseInt(valueurl));
+                                $('.discount').html(result.discount);
                                 alert (result.coupon_code + " has been Successfully Applied");
                                 return true;
                             }
                             else if (dataResult.statusCode == 201) {
                                 alert("Invalid coupon");
-                                $(".applied").css('display', 'none');
+                                $(".applied-mobile").css('display', 'none');
                                 $(".strike").css('display', 'none');
-                                document.getElementById('price-mobile').innerHTML = "2000";
-                                $("#price").css('color', '#fff');
                             }
                         }
                     });
                 } else {
                     alert("Invalid coupon");
-                    // result.value = 1997;
-                    // result.discount = 0;
-                    // document.getElementById('price').innerHTML = "&#8377;1,997";
-                    // $("#price").css('color', '#000');
                 }   
 
 
-                $(".coupon-code-applied-cross-mobile").on("click", function (e) {
+                $(".coupon-code-applied-cross").on("click", function (e) {
                     e.preventDefault();
-                    document.getElementById('err-mobile').innerHTML = "Apply";
+                    document.getElementById('err').innerHTML = "Apply";
                     $(".applied").css('display', 'none');
                     $(".strike").css('display', 'none');
-                    document.getElementById('price').innerHTML = "&#8377;1,997";
-                    $("#price").css('color', '#fff');
-                    $("#err-mobile").removeClass("disabled");
-                    result.value = 2000;
-                    result.discount = 0;
+                    $("#err").removeClass("disabled");
+                    // result.value = 2000;
+                    // result.discount = 0;
                 });
             }
             
             // add Gift Wraping
-            var gift_wrap ="";
             function wrap_price(){
                 if ($('#Checkbox-mobile').is(':checked')) {
-                    $('.giftPrice').html('50');
-                    result.value = (parseInt(result.value) + 50);
-                    $('.modaltotal').html(result.value);
+                    $('.giftPrice').html(50*parseInt(valueurl));
+                    // result.value = parseInt(result.value)*parseInt(valueurl);
+                    $('.modaltotal').html(parseInt(result.value)*parseInt(valueurl)+50*parseInt(valueurl));
+                    total_value = parseInt(result.value)*parseInt(valueurl)+50*parseInt(valueurl); 
                 }else{
                     $('.giftPrice').html('00');
-                    result.value = result.value - 50;
-                    $('.modaltotal').html(result.value);
+                    $('.modaltotal').html(parseInt(result.value)*parseInt(valueurl));
+                    total_value = parseInt(result.value)*parseInt(valueurl); 
+                    // $('.modaltotal').html(result.value);
                 }
+            }            
+            if ($('#Checkbox-mobile').is(':checked') == false) {
+                total_value = parseInt(result.value)*parseInt(valueurl); 
             }
+
             // validation razorpay 
             $("#razorpaycheckout-mobile").on("click", function () {
                 var error = "";
@@ -876,7 +876,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                             special_note:$("#special-note-mobile").val(),
                             giftWrap:$("#giftWrap-mobile").val(),        
                             productName: "helping-Key",                    
-                            amount: result.value,
+                            amount: total_value,
                             'referral_id': referral_id,
                             discount: result.discount,
                             'coupon_code': coupon_code
@@ -889,7 +889,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                                 var order_id = data.id;
                                 var options = {
                                     "key": "rzp_test_Deii5btTqdfYUu", // rzp_live_LSedTe83FzVuTe, rzp_test_BAnreND3t2AMOK test key // Enter the Key ID generated from the Dashboard rzp_test_Deii5btTqdfYUu rzp_live_LSedTe83FzVuTe
-                                    "amount": parseInt(result.value * 100), // Amount is in currency subunits. Default currency is INR. Hence, 29935 refers to 29935 paise or INR 299.35.    
+                                    "amount": parseInt(total_value * 100), // Amount is in currency subunits. Default currency is INR. Hence, 29935 refers to 29935 paise or INR 299.35.    
                                     "currency": "INR",
                                     "name": "helpingKey",
                                     "description": "Gift your Loved Ones the KEY to Safety",
@@ -907,7 +907,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                                                 id: data.id,
                                                 productName: "helping-Key",
                                                 razorpay_payment_id: razorpay_payment_id,
-                                                amount: result.value,
+                                                amount: total_value,
                                                 email: $("#email").val()
                                             },
                                             success: function (data) {

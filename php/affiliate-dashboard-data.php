@@ -28,12 +28,13 @@ if(isset($_POST['email'])){
             $data['commission'] = $row['commission'];
         }
 
-        $result = mysqli_query($link, "SELECT `name`, `amount`, `date_now` FROM `orders_razorpay` WHERE `referral_id` = '$referral_id' AND `status` = 'paid' ");
+        $result = mysqli_query($link, "SELECT `fname`,`lname`, `amount`, `date_now` FROM `orders_razorpay` WHERE `referral_id` = '$referral_id' AND `status` = 'paid' ");
 
-        if (mysqli_num_rows($result) !=0 ) { 
+        if (mysqli_num_rows($result) !=0) { 
             $i = 0;
             while ($row = mysqli_fetch_array($result)) {
-                $orders[$i]['name'] = $row['name'];  
+                $orders[$i]['fname'] = $row['fname']; 
+                $orders[$i]['lname'] = $row['lname'];
                 $orders[$i]['amount'] = $row['amount'];
                 $orders[$i]['date_now'] = $row['date_now'];
                 $i = $i + 1;
@@ -41,7 +42,7 @@ if(isset($_POST['email'])){
 
             $result = mysqli_query($link, "SELECT * FROM `redeem_requests` WHERE `email` = '$email' AND `status` = 'paid' ");
             
-            if (mysqli_num_rows($result) !=0 ) { 
+            if (mysqli_num_rows($result)>0) { 
                 $i = 0;
                 $data['redeemStatus'] = 211;
                 while ($row = mysqli_fetch_array($result)) {

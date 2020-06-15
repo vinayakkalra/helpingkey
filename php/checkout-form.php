@@ -68,13 +68,13 @@ if(isset($_POST['country']) == 'country'){
     }
     $id = $id + 1;
 
-    $query =mysqli_query($link, "SELECT * FROM `orders_razorpay` WHERE email ='$email' AND status ='paid'");
-        if (mysqli_num_rows($query)>0){
-		    echo json_encode(array(
-                "status"=>701
-            ));
-        }else{      
-            $query = "INSERT INTO `orders_razorpay` (`id`, `country`, `fname`, `lname`, `company`, `address`, `appartment`, `towncity`, `state`, `zipCode`, `phone`, `email`, `password`, `country1`, `fname1`, `lname1`, `company1`, `address1`, `appartment1`, `towncity1`, `state1`, `zipCode1`, `special_note`,`giftWrap`, `productName`, `amount`, `referral_id`, `coupon_code`, `discount`, `from_ip`, `from_browser`, `status`) VALUES ('$id', '$country', '$fname', '$lname', '$company', '$address', '$appartment', '$towncity', '$state', '$zipCode', '$phone', '$email', '$password', '$country1', '$fname1', '$lname1', '$company1', '$address1', '$appartment1', '$towncity1', '$state1', '$zipCode1', '$special_note','$giftWrap', '$productName', '$amount', '$referral_id', '$coupon_code', '$discount', '$from_ip', '$from_browser', 'processing')";  
+    // $query =mysqli_query($link, "SELECT * FROM `orders_razorpay` WHERE email ='$email' AND status ='paid'");
+        // if (mysqli_num_rows($query)>0){
+		    // echo json_encode(array(
+                // "status"=>701
+            // ));
+        // }else{      
+            $query = "INSERT INTO `orders_razorpay` (`id`, `country`, `fname`, `lname`, `company`, `address`, `appartment`, `towncity`, `state`, `zipCode`, `phone`, `email`, `password`, `country1`, `fname1`, `lname1`, `company1`, `address1`, `appartment1`, `towncity1`, `state1`, `zipCode1`, `special_note`,`giftWrap`, `productName`, `amount`, `referral_id`, `coupon_code`, `discount`,`date_now`, `from_ip`, `from_browser`, `status`) VALUES ('$id', '$country', '$fname', '$lname', '$company', '$address', '$appartment', '$towncity', '$state', '$zipCode', '$phone', '$email', '$password', '$country1', '$fname1', '$lname1', '$company1', '$address1', '$appartment1', '$towncity1', '$state1', '$zipCode1', '$special_note','$giftWrap', '$productName', '$amount', '$referral_id', '$coupon_code','$discount', '$date_now' , '$from_ip', '$from_browser', 'processing')";  
 
             // echo $query;
             
@@ -90,6 +90,6 @@ if(isset($_POST['country']) == 'country'){
                 $data['error'] = $link -> error;
                 echo json_encode($data);
             } 
-        }
+        // }
     }
 ?>

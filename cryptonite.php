@@ -131,7 +131,7 @@
         })(window,document,'script','dataLayer','GTM-PFRW8HP');</script>
         <!-- End Google Tag Manager -->
 
-    <title>Cryptonite | Finstreet | India's 1st ever Financial Freedom Coach</title>
+    <title>Cryptonite |  helpingKey | Gift your Loved Ones</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/cropped-Fin-270x270.jpg">
