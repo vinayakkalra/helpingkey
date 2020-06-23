@@ -395,6 +395,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                             giftWrap:$("#giftWrap").val(),        
                             productName: "helping-Key",                    
                             amount: total_value,
+                            quantity: valueurl,
                             'referral_id': referral_id,
                             discount: result.discount,
                             'coupon_code': coupon_code
@@ -875,7 +876,8 @@ var referral_id = sessionStorage.getItem('referral_id');
                             zipCode1: $("#zipCode1-mobile").val(),
                             special_note:$("#special-note-mobile").val(),
                             giftWrap:$("#giftWrap-mobile").val(),        
-                            productName: "helping-Key",                    
+                            productName: "helping-Key",
+                            quantity: valueurl,                    
                             amount: total_value,
                             'referral_id': referral_id,
                             discount: result.discount,

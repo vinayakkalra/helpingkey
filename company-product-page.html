@@ -134,7 +134,7 @@
             -moz-appearance: textfield;
         }
         .quantity input {
-            width: 90px;
+            width: 100px;
             height: 57px;
             line-height: 1.65;
             float: left;
@@ -277,7 +277,7 @@
                                     <a class="nav-link color-black" href="user-login">Login/Signup</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link color-black" href="#">Contact</a>
+                                    <a class="nav-link color-black" href="contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -374,8 +374,8 @@
                     <br>
                     <div class="quantity">
                         <input type="number" min="100" max="200" step="1" value="100">
-                        <button type="button" onclick="location.href='quote-company'" class="ml-4 btn btn-danger btn-rounded font-barlow-m waves-effect waves-light" style="border:2px solid;font-size: 20px;padding:12px 35px;"> GET QUOTE NOW </button>
-                        <button type="button" onclick="location.href='quote-company'" class="ml-4 btn btn-rounded font-barlow-m waves-effect waves-light" style="border:2px solid;font-size: 20px;padding:12px 35px;background-color:#c7c2c2;border-color:#c7c2c2;"> GIFT NOW </button>
+                        <button type="button" class="ml-4 btn btn-danger btn-rounded font-barlow-m waves-effect waves-light addquantity" style="border:2px solid;font-size: 20px;padding:12px 35px;"> GET QUOTE NOW </button>
+                        <button type="button" class="ml-4 btn btn-rounded font-barlow-m waves-effect waves-light addquantity" style="border:2px solid;font-size: 20px;padding:12px 35px;background-color:#c7c2c2;border-color:#c7c2c2;"> GIFT NOW </button>
                     </div>
                     <p class="font-barlow-m m-0 mt-1" style="visibility:hidden;"><span class="color-danger font-barlow-b">10 Orders</span> <br>Per Person Limit</p>
                     <hr>
@@ -468,7 +468,7 @@
                             <input type="email" class="form-control" id="email" placeholder="Email Address">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Review"></textarea>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Write Review"></textarea>
                         </div>
                         <div class="d-inline">
                             <span class="font-barlow-m"> Your Ratings: </span>
@@ -640,19 +640,19 @@
                                 style="background: #0505055c 0% 0% no-repeat padding-box;">
                                 <div class="position-absolute w-100" style="top:35%;">
                                     <p class="footer-text font-weight-light text-center"
-                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#FF4747;"
+                                        style="font-size: 20px;margin-bottom: 5px;font-family: europhonic;color:#FF4747;"
                                         onclick="window.location = '/'">Home</p>
                                     <p class="footer-text font-weight-light text-center"
-                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
+                                        style="font-size: 20px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
                                         onclick="window.open('for-companies')">For Companies</p>
                                     <p class="footer-text font-weight-light text-center"
-                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
+                                        style="font-size: 20px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
                                         onclick="window.open('affiliate')">Earn with us</p>
                                     <p class="footer-text font-weight-light text-center"
-                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
+                                        style="font-size: 20px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
                                         onclick="window.open('user-login')">Login/Signup</p>
                                     <p class="footer-text font-weight-light text-center"
-                                        style="font-size: 30px;margin-bottom:10px;font-family: europhonic;color:#fff;"
+                                        style="font-size: 20px;margin-bottom:10px;font-family: europhonic;color:#fff;"
                                         onclick="window.location = '#'">Contact</p>
                                 </div>
                             </div>
@@ -678,7 +678,206 @@
             </header>
         </div>
         <!-- Page Content -->
-        
+        <div class="container-fluid bg-danger" style="margin-top:100px;text-align:center;">
+            <div class="d-flex justify-content-center">
+                <div class="col color-white p-0 text-left">
+                    <h6 class="font-barlow-eb p-3 mb-0" style="margin-top:4px;font-size:19px;">Gift Your Loved Ones the <span class="font-saman">Key</span> to Safety</h6>
+                </div>
+                <div class="col p-0">
+                    <img src="images/office_job_interview-759.png" style="height:110px;width:100%;">
+                </div>
+           </div>
+        </div>
+        <!--  -->
+        <div class="container-fluid">
+            <div class="container pt-5">
+                <div class="col-12">
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides1">
+                        <img src="images/img_woods_wide.jpg" style="width:100%;height:200px;">
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="images/img_5terre_wide.jpg" style="width:100%;height:200px;">
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="images/img_mountains_wide.jpg" style="width:100%;height:200px;">
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="images/img_lights_wide.jpg" style="width:100%;height:200px;">
+                    </div>
+                    <br>
+                    <!-- Thumbnail images -->
+                    <div class="row m-0">
+                        <div class="col-3 pl-0">
+                            <img class="demo1 cursor active" src="images/img_woods.jpg" style="width:100%;height:80px;" onclick="currentSlide(1)" alt="The Woods">
+                        </div>
+                        <div class="col-3 pl-0">
+                            <img class="demo1 cursor" src="images/img_5terre.jpg" style="width:100%;height:80px;" onclick="currentSlide(2)" alt="Cinque Terre">
+                        </div>
+                        <div class="col-3 pl-0">
+                            <img class="demo1 cursor" src="images/img_mountains.jpg" style="width:113%;height:80px;" onclick="currentSlide(3)" alt="Mountains and fjords">
+                        </div>
+                        <div class="col-3 pr-0">
+                            <img class="demo1 cursor" src="images/img_lights.jpg" style="width:100%;height:80px;" onclick="currentSlide(4)" alt="Northern Lights">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container pt-5">
+                <div class="col-12">
+                    <h2 class="font-barlow-m" style="font-size:25px;"><span class="font-barlow-eb">Helping </span><span class="font-saman">Key</span>&#8482; Your Employees Key to Safety</h2>
+                    <hr>
+                    <p class="font-barlow-b mb-0" style="font-size:20px;">RS.2000 
+                        <span class="d-flex p-1" style="margin-left: -2px;">
+                            <span class="checked fa fa-star pr-1"></span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="pl-2 font-barlow-m" style="margin-top:-1px;color:#c7c2c2;font-size:14px;">1,372 Customer Reviews</span>
+                        </span>
+                    </p>
+                    <h7 class="font-barlow-m" style="color:#c7c2c2;font-size:14px;">Pricing Variable on Order Quantity</h7>
+                    <hr>
+                    <div class="col-11 p-0">
+                        <p class="font-barlow-m" style="color:#c7c2c2;text-align:justify;">The <span style="color:#000;">Original Anti-Microbial Helping <span class="font-saman">Key</span>&#8482;</span>, Keep your Emplyees safe with the latest in Anti-Microbial Tech.</p>
+                        <ul class="font-barlow-m pb-4" style="color:#c7c2c2;text-align:justify;">
+                            <li><span style="color:#000;">Easily maneuver</span> microbe ridden surfaces without fear of infection, keep your emplyees safe during their daily commute</li>
+                            <li>Made from <span style="color:#000;">BLu&#8482; Certified </span> Anti-Microbial Copper Alloy.</li>
+                            <li><span style="color:#000;">Free </span>Antimicrobial Cleanser Fluid With Every Purchase.</li>
+                            <li><span style="color:#000;">Free </span>Trendy Mask with Every Purchase.</li>
+                            <li><span style="color:#000;">Add Your Company's Branding</span> on All Items.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-danger">
+            <div class="col-12 d-flex p-0">
+                <div class="col-4 p-0">
+                    <div class="color-white justify-content-center p-2" style="display:table;">
+                        <i class="fa fa-truck color-white p-1"></i><p class="mb-0 font-barlow-m" style="display:table-cell;font-size:11px;">Free delivery all across India</p>
+                    </div>
+                </div>
+                <div class="col-8 p-0">
+                    <div class="color-white justify-content-center p-2" style="display:table;">
+                        <i class="fa fa-truck color-white p-1"></i><p class="mb-0 font-barlow-m" style="display:table-cell;font-size: 12px;">Pan India fast &amp; realiable delivery Powered By Delhivery</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="col-12 d-flex justify-content-center p-0">
+                <div class="pt-3">
+                    <div class="quantity">                        
+                        <input type="number" id="quantity-mobile" min="100" max="200" step="1" value="100"><div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div><div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>
+                        <button type="button" class="btn btn-danger btn-rounded font-barlow-m ml-3 waves-effect waves-light addquantity-mobile" style="border:2px solid;font-size: 15px;padding: 17px 20px;"> BUY NOW </button>
+                        <button type="button" class="btn btn-rounded font-barlow-m waves-effect waves-light addquantity-mobile" style="border:2px solid;font-size: 15px;padding: 17px 20px;background-color:#c7c2c2;border-color:#c7c2c2;"> GIFT NOW </button>
+                    </div>
+                    <p class="font-barlow-m m-0 mt-3"><span class="color-danger font-barlow-b">10 Orders</span> <br>Per Person Limit</p>
+                    <hr>
+                    <div>
+                        <div class="col-md-12 col-lg-12 ml-lg-0">
+                            <p class="font-barlow-b m-0 text-center">Share with friends</p>
+                        </div>
+                        <div class="col-lg-12 col-md-12 ml-lg-0">        
+                            <!-- Social buttons -->
+                            <div class="pt-3 text-center">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>        
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>  
+            <div class="container-fluid pt-3">
+                <div class="col-12">
+                    <h2 class="font-barlow-m" style="font-size:25px;">Product Description</h2>
+                    <p class="font-barlow-m" style="color:#c7c2c2;text-align:justify;">The <span style="color:#000;">Original Anti-Microbial Helping <span class="font-saman">Key</span>&#8482;</span>, Keep yourself and your loved ones safe with the latest in Anti-Microbial Tech. It is made from <span style="color:#000;">BLu&#8482; Certified </span> Anti-Microbial Copper Alloy that kills any mibrobes that come into contact with its surface. Keep yourself and your loved ones safe by gifting them the key to safely commute through the microbe ladden enviornment. get a <span style="color:#000;">free trendy mask </span> as well as a <span style="color:#000;">free anti-microbial cleanser fluid</span> which cleans each and every surface of mibrobes. Get this unbelievable offer now at just <strike class="pr-2" style="color:#c7c2c2">RS.2000</strike><span style="color:#000;">RS.600</span> Now.
+                    </p>
+                    <p class="font-barlow-m">Free, fast and reliable delivery accross all states of India powered by Delhivery</p>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="container-fluid bg-danger" style="text-align:center;">
+            <div class="d-flex justify-content-center">
+                <div class="col color-white p-0 text-left">
+                    <h6 class="font-barlow-eb p-3 mb-0" style="margin-top:9px;font-size:18px;">Gift Your Employees their <span class="font-saman">Key</span> to Safety</h6>
+                </div>
+                <div class="col p-0">
+                    <img src="images/office_job_interview-759.png" style="height:110px;width:100%;">
+                </div>
+           </div>
+        </div>
+        <!--  -->
+        <div class="container-fluid bg-light">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="col-12">
+                        <h1 class="font-barlow-b pt-2" style="font-size:24px;">Over 1,372 Happy Customers and counting...</h1>
+                        <div class="d-flex">
+                            <h4 class="font-barlow-m p-1">Sort By</h4>
+                            <div class="form-group mb-0" style="width:168px;">
+                                <select class="bg-danger color-white ml-3" style="padding:5px;border: 1px solid #dc3545;border-radius:15px;-webkit-appearance:menulist !important;-moz-appearance:menulist !important;">
+                                    <option>MOST POPULAR</option>
+                                    <option>MOST POPULAR</option>
+                                    <option>MOST POPULAR</option>
+                                </select>
+                            </div>
+                        </div>  
+                        <!-- populate-comment -->
+                        <div id="populate-comment-mobile"></div>
+                    </div>
+                    <div class="col-12">
+                        <h1 class="font-barlow-b pt-2" style="font-size:28px;">Add Review</h1>
+                        <br>
+                        <div class="d-inline">
+                            <span class="font-barlow-m"> Your Ratings: </span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star pr-1 checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="form-group pt-3">
+                            <input type="text" class="form-control" id="name-mobile" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email-mobile" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Review"></textarea>
+                        </div>
+                        <button type="button" onclick="location.href='checkout'" class="btn btn-danger btn-rounded font-barlow-m waves-effect waves-light mb-4" style="border:2px solid;font-size:20px;padding: 12px 18px;margin-left:9rem;"> ADD REVIEW </button>
+                    </div>
+                </div>
+            </div>
+        </div>        
         <!-- Footer -->
         <footer class="page-footer font-small mdb-color pt-4">
             <!-- Footer Links -->
@@ -804,240 +1003,502 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        // images slider
-        var slideIndex = 1;
+        if (window.innerWidth >= 960) {
 
-        showSlides(slideIndex);
+            // images slider
+            var slideIndex = 1;
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+            showSlides(slideIndex);
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
 
-        // quantity js
-        jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
-
-        jQuery('.quantity').each(function () {
-            var spinner = jQuery(this),
-                input = spinner.find('input[type="number"]'),
-                btnUp = spinner.find('.quantity-up'),
-                btnDown = spinner.find('.quantity-down'),
-                min = input.attr('min'),
-                max = input.attr('max');
-
-            btnUp.click(function () {
-                var oldValue = parseFloat(input.val());
-                if (oldValue >= max) {
-                    var newVal = oldValue;
-                } else {
-                    var newVal = oldValue + 1;
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
                 }
-                spinner.find("input").val(newVal);
-                spinner.find("input").trigger("change");
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+            // quantity js
+            jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+
+            jQuery('.quantity').each(function () {
+                var spinner = jQuery(this),
+                    input = spinner.find('input[type="number"]'),
+                    btnUp = spinner.find('.quantity-up'),
+                    btnDown = spinner.find('.quantity-down'),
+                    min = input.attr('min'),
+                    max = input.attr('max');
+
+                btnUp.click(function () {
+                    var oldValue = parseFloat(input.val());
+                    if (oldValue >= max) {
+                        var newVal = oldValue;
+                    } else {
+                        var newVal = oldValue + 1;
+                    }
+                    spinner.find("input").val(newVal);
+                    spinner.find("input").trigger("change");
+                });
+
+                btnDown.click(function () {
+                    var oldValue = parseFloat(input.val());
+                    if (oldValue <= min) {
+                        var newVal = oldValue;
+                    } else {
+                        var newVal = oldValue - 1;
+                    }
+                    spinner.find("input").val(newVal);
+                    spinner.find("input").trigger("change");
+                });
+
+            }); 
+
+            // get quantity on checkout page
+            $(".addquantity").on("click", function(){
+                var quantity = $("#quantity").val();
+                window.location.href = "quote-company?value=" + quantity; 
             });
 
-            btnDown.click(function () {
-                var oldValue = parseFloat(input.val());
-                if (oldValue <= min) {
-                    var newVal = oldValue;
-                } else {
-                    var newVal = oldValue - 1;
-                }
-                spinner.find("input").val(newVal);
-                spinner.find("input").trigger("change");
-            });
-
-        }); 
-
-        //intial reviews population desktop
-        var comments_desktop=[];
-        $.ajax({
-            type:'POST',
-            url:'php/comments.php',
-            dataType: "json",
-            data:{
-                type:'get-comment',
-                product_name:'pubg'
-            },
-            success:function(data){
-                if(data.status == 'ok'){
-                    // console.log("invalid");
-                    // $('#err-coupon-invalid').slideDown('slow');
-                    // alert('ok');
-                    // console.log(data.comments);
-                    // $("#review-container-desktop").css('display','none');
-                    // $("#review-success-desktop").css('display','block');
-                    comments_desktop = data.comments;
-                    
-                    $("#number-comments-desktop").html(comments_desktop.length-4);
-                    for(var i=0; i<4 ; i++){
-                        var star_string = "";
-                        // console.log(star_string);
-                        for(var j =0; j < 5; j++){
-                            if(j<comments_desktop[i].rating){
-                                star_string = star_string + '<span class="fa fa-star star-color-small-desktop"></span>';
-                            }else{
-                                star_string = star_string + '<span class="fa fa-star-o star-color-small-desktop"></span>';
-                            }
-                        }
-                        if(comments_desktop[i].name==""){
-                            comments_desktop[i].name = 'Anonymous';
-                        }
-
-                        var date_now = new Date();
-                        var date_then = new Date(comments_desktop[i].time);
-                        // To calculate the time difference of two dates 
-                        var Difference_In_Time = date_now.getTime() - date_then.getTime(); 
+            //intial reviews population desktop
+            var comments_desktop=[];
+            $.ajax({
+                type:'POST',
+                url:'php/comments.php',
+                dataType: "json",
+                data:{
+                    type:'get-comment',
+                    product_name:'pubg'
+                },
+                success:function(data){
+                    if(data.status == 'ok'){
+                        // console.log("invalid");
+                        // $('#err-coupon-invalid').slideDown('slow');
+                        // alert('ok');
+                        // console.log(data.comments);
+                        // $("#review-container-desktop").css('display','none');
+                        // $("#review-success-desktop").css('display','block');
+                        comments_desktop = data.comments;
                         
-                        // To calculate the no. of days between two dates 
-                        var Difference_In_Days = parseInt(Difference_In_Time / (1000 * 3600 * 24)); 
-
-                        var time_diff = "";
-                        if(Difference_In_Days == 0){
-                            time_diff = "Today";
-                        } else if (Difference_In_Days == 1){
-                            time_diff = String(Difference_In_Days) + " day ago";
-                        } else{
-                            time_diff = String(Difference_In_Days) + " days ago";
-                        }
-
-                        $("#populate-comment-desktop").html('<div class="d-flex pt-4"><div class="col-3 d-flex justify-content-center"><div class="bg-danger" style="border-radius:50%;height:90px;width:90px;"></div></div><div class="col-9"><h5 class="font-barlow-sb mb-1">'+ comments_desktop[i].name +'</h5><div class="d-inline"><h7 class="font-barlow-m">'+time_diff+ '</h7><span class="pl-2 fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star"></span></div><p class="font-barlow-m pt-3">'+ comments_desktop[i].message +'.</p></div></div>' + $("#populate-comment-desktop").html());     
-                                       
-                    }
-                    
-                    
-                }else{
-                    // alert('coupon valid');
-                    // console.log(data.status);
-                    
-                } 
-            }
-        });
-
-        // populate all reviews desktop
-        $("#view-more-desktop").on("click", function(){
-            $("#view-more-desktop").css('display','none');
-            $("#v-desktop").css('display','none');
-            // console.log(comments_desktop.length);
-            $("#populate-comment-desktop").html("");
-            for(var i=0; i<comments_desktop.length ; i++){
-                var star_string = "";
-                // console.log(star_string);
-                for(var j =0; j < 5; j++){
-                    if(j<comments_desktop[i].rating){
-                        star_string = star_string + '<span class="fa fa-star star-color-small-desktop"></span>';
-                    }else{
-                        star_string = star_string + '<span class="fa fa-star-o star-color-small-desktop"></span>';
-                    }
-                }
-                if(comments_desktop[i].name==""){
-                    comments_desktop[i].name = 'Anonymous';
-                }
-
-                var date_now = new Date();
-                var date_then = new Date(comments_desktop[i].time);
-                // To calculate the time difference of two dates 
-                var Difference_In_Time = date_now.getTime() - date_then.getTime(); 
-                
-                // To calculate the no. of days between two dates 
-                var Difference_In_Days = parseInt(Difference_In_Time / (1000 * 3600 * 24)); 
-
-                var time_diff = "";
-                if(Difference_In_Days == 0){
-                    time_diff = "Today";
-                } else if (Difference_In_Days == 1){
-                    time_diff = String(Difference_In_Days) + " day ago";
-                } else{
-                    time_diff = String(Difference_In_Days) + " days ago";
-                }
-                
-                $("#populate-comment-desktop").html('<div class="row d-flex" style=" padding-top: 30px; margin: 0px; padding-bottom: 0px;"><span class="fa fa-user user-icon"></span>         <p class="paragraph15mobile d-flex align-items-center" style="font-size: 24px; font-family: roboto-regular; margin-top: 0px; margin-bottom: 0px; width: 65%;">'+ comments_desktop[i].name +'</p><p class="paragraph16mobile d-flex justify-content-center align-items-center" style="font-size: 24px; font-family: roboto-regular; margin:0px !important;">'+time_diff+ '</p></div><div class="row px-3 m-0" >'+ star_string +'                <p class="paragraph17mobile" style="font-size: 24px; font-family: roboto-regular; margin-bottom:0px !important;">'+ comments_desktop[i].subject +'</p>            </div>         <p class="paragraph18mobile px-3"  style="font-size: 24px; font-family: roboto-regular; margin:0px !important; width: 100% !important">'+comments_desktop[i].message+'</p>' + $("#populate-comment-desktop").html());
-
-            }
-        });
-
-        //review checkin desktop
-        $("#review-success-desktop").css('display','none');
-        $("#submit-desktop").on("click",function(){
-            var name_review = $("#name-desktop").val();
-            var email = $("#email-desktop").val();
-            var subject = $("#subject-desktop").val();
-            var message = $("#message-desktop").val();
-            var error = ""
-            
-            if(message == ""){
-                error = 'Please enter a message';
-            }
-
-            if(error != ""){
-                alert(error);
-            } else{
-                $.ajax({
-                    type:'POST',
-                    url:'php/comments.php',
-                    dataType: "json",
-                    data:{
-                        type:'post-comment',
-                        product_name:'pubg',
-                        "name": name_review,
-                        "email": email,
-                        "subject": subject,
-                        "message": message,
-                        "rating": star_desktop
-                    },
-                    success:function(data){
-                        if(data.status == 'ok'){
-                            // $('#err-coupon-invalid').slideDown('slow');
-                            // alert('ok');
-                            $("#review-container-desktop").css('display','none');
-                            $("#review-success-desktop").css('display','block');
-
+                        $("#number-comments-desktop").html(comments_desktop.length-4);
+                        for(var i=0; i<4 ; i++){
                             var star_string = "";
-                            for(var i =0; i < 5; i++){
-                                if(i<star_desktop){
+                            // console.log(star_string);
+                            for(var j =0; j < 5; j++){
+                                if(j<comments_desktop[i].rating){
                                     star_string = star_string + '<span class="fa fa-star star-color-small-desktop"></span>';
                                 }else{
                                     star_string = star_string + '<span class="fa fa-star-o star-color-small-desktop"></span>';
                                 }
                             }
-                            if(name_review==""){
-                                name_review = 'Anonymous';
+                            if(comments_desktop[i].name==""){
+                                comments_desktop[i].name = 'Anonymous';
                             }
-                            // console.log(name_review);
-                            $("#populate-comment-desktop").html('<div class="row d-flex" style=" padding-top: 30px; margin: 0px; padding-bottom: 0px;"><span class="fa fa-user user-icon"></span>          <p class="paragraph15mobile d-flex align-items-center" style="font-size: 24px; font-family: roboto-regular; margin-top: 0px; margin-bottom: 0px; width: 65%;">'+ name_review +'</p><p class="paragraph16mobile d-flex justify-content-center align-items-center" style="font-size: 24px; font-family: roboto-regular; margin:0px !important;">Today</p></div><div class="row px-3 m-0" >'+ star_string +'                <p class="paragraph17mobile" style="font-size: 24px; font-family: roboto-regular; margin-bottom:0px !important;">'+ subject +'</p>            </div>         <p class="paragraph18mobile px-3"  style="font-size: 24px; font-family: roboto-regular; margin:0px !important; width: 100% !important">'+message+'</p>' + $("#populate-comment-desktop").html())
 
+                            var date_now = new Date();
+                            var date_then = new Date(comments_desktop[i].time);
+                            // To calculate the time difference of two dates 
+                            var Difference_In_Time = date_now.getTime() - date_then.getTime(); 
                             
+                            // To calculate the no. of days between two dates 
+                            var Difference_In_Days = parseInt(Difference_In_Time / (1000 * 3600 * 24)); 
+
+                            var time_diff = "";
+                            if(Difference_In_Days == 0){
+                                time_diff = "Today";
+                            } else if (Difference_In_Days == 1){
+                                time_diff = String(Difference_In_Days) + " day ago";
+                            } else{
+                                time_diff = String(Difference_In_Days) + " days ago";
+                            }
+
+                            $("#populate-comment-desktop").html('<div class="d-flex pt-4"><div class="col-3 d-flex justify-content-center"><div class="bg-danger" style="border-radius:50%;height:90px;width:90px;"></div></div><div class="col-9"><h5 class="font-barlow-sb mb-1">'+ comments_desktop[i].name +'</h5><div class="d-inline"><h7 class="font-barlow-m">'+time_diff+ '</h7><span class="pl-2 fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star"></span></div><p class="font-barlow-m pt-3">'+ comments_desktop[i].message +'.</p></div></div>' + $("#populate-comment-desktop").html());     
+                                            
+                        }
+                        
+                        
+                    }else{
+                        // alert('coupon valid');
+                        // console.log(data.status);
+                        
+                    } 
+                }
+            });
+
+            // populate all reviews desktop
+            $("#view-more-desktop").on("click", function(){
+                $("#view-more-desktop").css('display','none');
+                $("#v-desktop").css('display','none');
+                // console.log(comments_desktop.length);
+                $("#populate-comment-desktop").html("");
+                for(var i=0; i<comments_desktop.length ; i++){
+                    var star_string = "";
+                    // console.log(star_string);
+                    for(var j =0; j < 5; j++){
+                        if(j<comments_desktop[i].rating){
+                            star_string = star_string + '<span class="fa fa-star star-color-small-desktop"></span>';
                         }else{
-                            // alert('coupon valid');
-                            // console.log(data.status);
-                            
-                        } 
+                            star_string = star_string + '<span class="fa fa-star-o star-color-small-desktop"></span>';
+                        }
                     }
-                });
+                    if(comments_desktop[i].name==""){
+                        comments_desktop[i].name = 'Anonymous';
+                    }
+
+                    var date_now = new Date();
+                    var date_then = new Date(comments_desktop[i].time);
+                    // To calculate the time difference of two dates 
+                    var Difference_In_Time = date_now.getTime() - date_then.getTime(); 
+                    
+                    // To calculate the no. of days between two dates 
+                    var Difference_In_Days = parseInt(Difference_In_Time / (1000 * 3600 * 24)); 
+
+                    var time_diff = "";
+                    if(Difference_In_Days == 0){
+                        time_diff = "Today";
+                    } else if (Difference_In_Days == 1){
+                        time_diff = String(Difference_In_Days) + " day ago";
+                    } else{
+                        time_diff = String(Difference_In_Days) + " days ago";
+                    }
+                    
+                    $("#populate-comment-desktop").html('<div class="d-flex pt-4"><div class="col-3 d-flex justify-content-center"><div class="bg-danger" style="border-radius:50%;height:90px;width:90px;"></div></div><div class="col-9"><h5 class="font-barlow-sb mb-1">'+ comments_desktop[i].name +'</h5><div class="d-inline"><h7 class="font-barlow-m">'+time_diff+ '</h7><span class="pl-2 fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star"></span></div><p class="font-barlow-m pt-3">'+ comments_desktop[i].message +'.</p></div></div>' + $("#populate-comment-desktop").html()); 
+
+                }
+            });
+
+            //review checkin desktop
+            $("#submit").on("click",function(){
+                var name_review = $("#name").val();
+                var email = $("#email").val();
+                var subject = $("#subject").val();
+                var message = $("#message").val();
+                var error = ""
+                
+                if(message == ""){
+                    error = 'Please enter a message';
+                }
+
+                if(error != ""){
+                    alert(error);
+                } else{
+                    $.ajax({
+                        type:'POST',
+                        url:'php/comments.php',
+                        dataType: "json",
+                        data:{
+                            type:'post-comment',
+                            product_name:'pubg',
+                            "name": name_review,
+                            "email": email,
+                            "subject": subject,
+                            "message": message,
+                            "rating": star_desktop
+                        },
+                        success:function(data){
+                            if(data.status == 'ok'){
+                                // $('#err-coupon-invalid').slideDown('slow');
+                                // alert('ok');
+                                $("#review-container-desktop").css('display','none');
+                                $("#review-success-desktop").css('display','block');
+
+                                var star_string = "";
+                                for(var i =0; i < 5; i++){
+                                    if(i<star_desktop){
+                                        star_string = star_string + '<span class="fa fa-star star-color-small-desktop"></span>';
+                                    }else{
+                                        star_string = star_string + '<span class="fa fa-star-o star-color-small-desktop"></span>';
+                                    }
+                                }
+                                if(name_review==""){
+                                    name_review = 'Anonymous';
+                                }
+                                // console.log(name_review);
+                                $("#populate-comment-desktop").html('<div class="row d-flex" style=" padding-top: 30px; margin: 0px; padding-bottom: 0px;"><span class="fa fa-user user-icon"></span>          <p class="paragraph15mobile d-flex align-items-center" style="font-size: 24px; font-family: roboto-regular; margin-top: 0px; margin-bottom: 0px; width: 65%;">'+ name_review +'</p><p class="paragraph16mobile d-flex justify-content-center align-items-center" style="font-size: 24px; font-family: roboto-regular; margin:0px !important;">Today</p></div><div class="row px-3 m-0" >'+ star_string +'                <p class="paragraph17mobile" style="font-size: 24px; font-family: roboto-regular; margin-bottom:0px !important;">'+ subject +'</p>            </div>         <p class="paragraph18mobile px-3"  style="font-size: 24px; font-family: roboto-regular; margin:0px !important; width: 100% !important">'+message+'</p>' + $("#populate-comment-desktop").html())
+
+                                
+                            }else{
+                                // alert('coupon valid');
+                                // console.log(data.status);
+                                
+                            } 
+                        }
+                    });
+                }
+
+                
+
+            });
+        
+        }else {
+            // mobile code here
+
+            //open mobile drawer
+            $("#drawer").css('display', 'none');
+            $("#open-drawer").on("click", function () {
+                if ($("#drawer").css('display') == 'none') {
+                    $("#drawer").css('display', 'block');
+                } else {
+                    $("#drawer").css('display', 'none');
+                }
+            });
+            $("#cross").on("click", function () {
+                $("#drawer").css('display', 'none');
+            });
+
+            // images slider
+            var slideIndex = 1;
+
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
             }
 
-            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
 
-        });
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides1");
+                var dots = document.getElementsByClassName("demo1");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+            // quantity js
+            jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+
+            jQuery('.quantity').each(function () {
+                var spinner = jQuery(this),
+                    input = spinner.find('input[type="number"]'),
+                    btnUp = spinner.find('.quantity-up'),
+                    btnDown = spinner.find('.quantity-down'),
+                    min = input.attr('min'),
+                    max = input.attr('max');
+
+                btnUp.click(function () {
+                    var oldValue = parseFloat(input.val());
+                    if (oldValue >= max) {
+                        var newVal = oldValue;
+                    } else {
+                        var newVal = oldValue + 1;
+                    }
+                    spinner.find("input").val(newVal);
+                    spinner.find("input").trigger("change");
+                });
+
+                btnDown.click(function () {
+                    var oldValue = parseFloat(input.val());
+                    if (oldValue <= min) {
+                        var newVal = oldValue;
+                    } else {
+                        var newVal = oldValue - 1;
+                    }
+                    spinner.find("input").val(newVal);
+                    spinner.find("input").trigger("change");
+                });
+
+            }); 
+
+            // get quantity on checkout page
+            $(".addquantity-mobile").on("click", function(){
+                var quantity = $("#quantity-mobile").val();
+                window.location.href = "quote-company?value=" + quantity; 
+            });
+
+            //intial reviews population desktop
+            var comments_desktop=[];
+            $.ajax({
+                type:'POST',
+                url:'php/comments.php',
+                dataType: "json",
+                data:{
+                    type:'get-comment',
+                    product_name:'fortnite'
+                },
+                success:function(data){
+                    if(data.status == 'ok'){
+                        // console.log("invalid");
+                        // $('#err-coupon-invalid').slideDown('slow');
+                        // alert('ok');
+                        // console.log(data.comments);
+                        // $("#review-container-desktop").css('display','none');
+                        // $("#review-success-desktop").css('display','block');
+                        comments_desktop = data.comments;
+                        
+                        $("#number-comments-mobile").html(comments_desktop.length-4);
+                        for(var i=0; i<4 ; i++){
+                            var star_string = "";
+                            // console.log(star_string);
+                            for(var j =0; j < 5; j++){
+                                if(j<comments_desktop[i].rating){
+                                    star_string = star_string + '<span class="fa fa-star star-color-small-desktop"></span>';
+                                }else{
+                                    star_string = star_string + '<span class="fa fa-star-o star-color-small-desktop"></span>';
+                                }
+                            }
+                            if(comments_desktop[i].name==""){
+                                comments_desktop[i].name = 'Anonymous';
+                            }
+
+                            var date_now = new Date();
+                            var date_then = new Date(comments_desktop[i].time);
+                            // To calculate the time difference of two dates 
+                            var Difference_In_Time = date_now.getTime() - date_then.getTime(); 
+                            
+                            // To calculate the no. of days between two dates 
+                            var Difference_In_Days = parseInt(Difference_In_Time / (1000 * 3600 * 24)); 
+
+                            var time_diff = "";
+                            if(Difference_In_Days == 0){
+                                time_diff = "Today";
+                            } else if (Difference_In_Days == 1){
+                                time_diff = String(Difference_In_Days) + " day ago";
+                            } else{
+                                time_diff = String(Difference_In_Days) + " days ago";
+                            }
+
+                            $("#populate-comment-mobile").html('<div class="d-flex pt-4"><div class="col-3 d-flex justify-content-center p-0"><div class="bg-danger" style="border-radius:50%;height:75px;width:75px;"></div></div><div class="col-9"><h5 class="font-barlow-sb mb-1">'+ comments_desktop[i].name +'</h5><div class="d-inline"><h7 class="font-barlow-m">'+time_diff+ '</h7><span class="pl-2 fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star pr-1 checked"></span><span class="fa fa-star"></span></div><p class="font-barlow-m pt-2">'+ comments_desktop[i].message +'.</p></div></div>' + $("#populate-comment-mobile").html());     
+                                        
+                        }
+                        
+                        
+                    }else{
+                        // alert('coupon valid');
+                        // console.log(data.status);
+                        
+                    } 
+                }
+            });
+
+            // populate all reviews desktop
+            $("#populate-comment-mobile").on("click", function(){
+                $("#view-more-mobile").css('display','none');
+                $("#v-mobile").css('display','none');
+                // console.log(comments_desktop.length);
+                $("#populate-comment-mobile").html("");
+                for(var i=0; i<comments_desktop.length ; i++){
+                    var star_string = "";
+                    // console.log(star_string);
+                    for(var j =0; j < 5; j++){
+                        if(j<comments_desktop[i].rating){
+                            star_string = star_string + '<span class="fa fa-star star-color-small-desktop"></span>';
+                        }else{
+                            star_string = star_string + '<span class="fa fa-star-o star-color-small-desktop"></span>';
+                        }
+                    }
+                    if(comments_desktop[i].name==""){
+                        comments_desktop[i].name = 'Anonymous';
+                    }
+
+                    var date_now = new Date();
+                    var date_then = new Date(comments_desktop[i].time);
+                    // To calculate the time difference of two dates 
+                    var Difference_In_Time = date_now.getTime() - date_then.getTime(); 
+                    
+                    // To calculate the no. of days between two dates 
+                    var Difference_In_Days = parseInt(Difference_In_Time / (1000 * 3600 * 24)); 
+
+                    var time_diff = "";
+                    if(Difference_In_Days == 0){
+                        time_diff = "Today";
+                    } else if (Difference_In_Days == 1){
+                        time_diff = String(Difference_In_Days) + " day ago";
+                    } else{
+                        time_diff = String(Difference_In_Days) + " days ago";
+                    }
+                    
+                    $("#populate-comment-mobile").html('<div class="row d-flex" style=" padding-top: 30px; margin: 0px; padding-bottom: 0px;"><span class="fa fa-user user-icon"></span>         <p class="paragraph15mobile d-flex align-items-center" style="font-size: 24px; font-family: roboto-regular; margin-top: 0px; margin-bottom: 0px; width: 65%;">'+ comments_desktop[i].name +'</p><p class="paragraph16mobile d-flex justify-content-center align-items-center" style="font-size: 24px; font-family: roboto-regular; margin:0px !important;">'+time_diff+ '</p></div><div class="row px-3 m-0" >'+ star_string +'                <p class="paragraph17mobile" style="font-size: 24px; font-family: roboto-regular; margin-bottom:0px !important;">'+ comments_desktop[i].subject +'</p>            </div>         <p class="paragraph18mobile px-3"  style="font-size: 24px; font-family: roboto-regular; margin:0px !important; width: 100% !important">'+comments_desktop[i].message+'</p>' + $("#populate-comment-mobile").html());
+
+                }
+            });
+
+            //review checkin mobile
+            $("#review-success-mobile").css('display','none');
+            $("#submit-mobile").on("click",function(){
+                var name_review = $("#name-mobile").val();
+                var email = $("#email-mobile").val();
+                var subject = $("#subject-mobile").val();
+                var message = $("#message-mobile").val();
+                var error = ""
+                
+                if(message == ""){
+                    error = 'Please enter a message';
+                }
+
+                if(error != ""){
+                    alert(error);
+                } else{
+                    $.ajax({
+                        type:'POST',
+                        url:'php/comments.php',
+                        dataType: "json",
+                        data:{
+                            type:'post-comment',
+                            product_name:'fortnite',
+                            "name": name_review,
+                            "email": email,
+                            "subject": subject,
+                            "message": message,
+                            "rating": star_desktop
+                        },
+                        success:function(data){
+                            if(data.status == 'ok'){
+                                // $('#err-coupon-invalid').slideDown('slow');
+                                // alert('ok');
+                                $("#review-container-mobile").css('display','none');
+                                $("#review-success-mobile").css('display','block');
+
+                                var star_string = "";
+                                for(var i =0; i < 5; i++){
+                                    if(i<star_desktop){
+                                        star_string = star_string + '<span class="fa fa-star star-color-small-mobile"></span>';
+                                    }else{
+                                        star_string = star_string + '<span class="fa fa-star-o star-color-small-mobile"></span>';
+                                    }
+                                }
+                                if(name_review==""){
+                                    name_review = 'Anonymous';
+                                }
+                                // console.log(name_review);
+                                $("#populate-comment-mobile").html('<div class="row d-flex" style=" padding-top: 30px; margin: 0px; padding-bottom: 0px;"><span class="fa fa-user user-icon"></span>          <p class="paragraph15mobile d-flex align-items-center" style="font-size: 24px; font-family: roboto-regular; margin-top: 0px; margin-bottom: 0px; width: 65%;">'+ name_review +'</p><p class="paragraph16mobile d-flex justify-content-center align-items-center" style="font-size: 24px; font-family: roboto-regular; margin:0px !important;">Today</p></div><div class="row px-3 m-0" >'+ star_string +'                <p class="paragraph17mobile" style="font-size: 24px; font-family: roboto-regular; margin-bottom:0px !important;">'+ subject +'</p>            </div>         <p class="paragraph18mobile px-3"  style="font-size: 24px; font-family: roboto-regular; margin:0px !important; width: 100% !important">'+message+'</p>' + $("#populate-comment-mobile").html())
+
+                                
+                            }else{
+                                // alert('coupon valid');
+                                // console.log(data.status);
+                                
+                            } 
+                        }
+                    });
+                }
+            });
+        }
 
         </script>
 </body>

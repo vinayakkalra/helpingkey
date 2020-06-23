@@ -238,7 +238,7 @@
                                     <a class="nav-link color-black" href="user-login">Login/Signup</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link color-black" href="#">Contact</a>
+                                    <a class="nav-link color-black" href="contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -256,7 +256,7 @@
         <div class="container-fluid">
             <div class="container d-flex pt-5">
                 <div class="col-6">
-                    <h7 class="font-barlow-m" style="color:slategray;">Returning Customer? <span class="color-danger"> Click Here To Login</span></h7>
+                    <h7 class="font-barlow-m" style="color:slategray;">Returning Customer? <a href="user-login"><span class="color-danger"> Click Here To Login</span></a></h7>
                     <h1 class="font-barlow-b pb-4">Billing Details</h1>
                     <div class="font-barlow-m">
                         <div class="form-group">
@@ -554,10 +554,10 @@
                         </div>                        
                         <div class="row form-group" id="pass" style="visibility:hidden;">
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" id="password" placeholder="Enter Password">
+                                <input type="password" class="bg-light border-light form-control" id="password" placeholder="Enter Password">
                             </div>
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" id="confirm_password" placeholder="Confirm Password">
+                                <input type="password" class="bg-light border-light form-control" id="confirm_password" placeholder="Confirm Password">
                             </div>
                         </div>
                     </div>   
@@ -1109,19 +1109,19 @@
                                 style="background: #0505055c 0% 0% no-repeat padding-box;">
                                 <div class="position-absolute w-100" style="top:35%;">
                                     <p class="footer-text font-weight-light text-center"
-                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#FF4747;"
+                                        style="font-size: 20px;margin-bottom: 5px;font-family: europhonic;color:#FF4747;"
                                         onclick="window.location = '/'">Home</p>
                                     <p class="footer-text font-weight-light text-center"
-                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
+                                        style="font-size: 20px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
                                         onclick="window.open('for-companies')">For Companies</p>
                                     <p class="footer-text font-weight-light text-center"
-                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
+                                        style="font-size: 20px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
                                         onclick="window.open('affiliate')">Earn with us</p>
                                     <p class="footer-text font-weight-light text-center"
-                                        style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
+                                        style="font-size: 20px;margin-bottom: 5px;font-family: europhonic;color:#fff;"
                                         onclick="window.open('user-login')">Login/Signup</p>
                                     <p class="footer-text font-weight-light text-center"
-                                        style="font-size: 30px;margin-bottom:10px;font-family: europhonic;color:#fff;"
+                                        style="font-size: 20px;margin-bottom:10px;font-family: europhonic;color:#fff;"
                                         onclick="window.location = '#'">Contact</p>
                                 </div>
                             </div>
@@ -1148,8 +1148,8 @@
         <div class="container-fluid">
             <div class="container pt-5">
                 <div class="col-12">
-                    <h7 class="font-barlow-m" style="color:slategray;">Returning Customer? <span class="color-danger"> Click Here To Login</span></h7>
-                    <h1 class="font-barlow-b pb-4">Billing Details</h1>
+                    <h7 class="font-barlow-m" style="color:slategray;font-size:13px;">Returning Customer? <a href="user-login"><span class="color-danger"> Click Here To Login</span></a></h7>
+                    <h2 class="font-barlow-b pb-4 pt-2">Billing Details</h2>
                     <div class="font-barlow-m">
                         <div class="form-group">
                             <select class="minimal bg-light border-light form-control" id="country-mobile" name="country">
@@ -1446,11 +1446,10 @@
                         </div>
                         <div class="row form-group" id="pass-mobile" style="visibility:hidden;">
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" id="password-mobile" placeholder="Enter Password">
+                                <input type="password" class="bg-light border-light form-control" id="password-mobile" placeholder="Enter Password">
                             </div>
                             <div class="col">
-                                <input type="text" class="bg-light border-light form-control" id="confirm_password-mobile"
-                                    placeholder="Confirm Password">
+                                <input type="password" class="bg-light border-light form-control" id="confirm_password-mobile" placeholder="Confirm Password">
                             </div>
                         </div>
                     </div>
@@ -1769,8 +1768,8 @@
                             <textarea class="bg-light border-light form-control" id="special-note-mobile" rows="3" placeholder="Notes about your order, e.g special note for delivery"></textarea>
                         </div>
                     </div>              
-                    <div class="container-fluid">
-                        <div class="container pt-3">
+                    <div class="container-fluid p-0">
+                        <div class="container p-0 pt-3">
                             <div class="col-12">
                                 <div class="row form-group pt-2">
                                     <table class="font-barlow-m" style="text-align:left;width:100%;border-collapse:separate;overflow:hidden;">
@@ -1846,7 +1845,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="container d-flex justify-content-end pt-5">
+                        <div class="container d-flex justify-content-end pt-4">
                             <button id="razorpaycheckout-mobile" class="btn btn-danger">Place your order powered By Razorpay</button>
                         </div>
                     </div>
