@@ -4,13 +4,13 @@
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150643411-2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=ENTER_YOUR_TAG_MANAGER_ID"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-150643411-2');
+    gtag('config', 'ENTER_YOUR_TAG_MANAGER_ID');
     </script>
 
     <!-- Google Tag Manager -->
@@ -18,7 +18,7 @@
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PFRW8HP');</script>
+        })(window,document,'script','dataLayer','ENTER_YOUR_TAG_MANAGER_ID');</script>
         <!-- End Google Tag Manager -->
 
     <title>User Dashboard |  helpingKey | Gift your Loved Ones</title>
@@ -37,11 +37,11 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2925272084236286');
+        fbq('init', 'ENTER_YOUR_PIXEL_ID');
         fbq('track', 'PageView');
       </script>
       <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2925272084236286&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=ENTER_YOUR_PIXEL_ID&ev=PageView&noscript=1"
       /></noscript>
       <!-- End Facebook Pixel Code -->
         
@@ -213,7 +213,7 @@
 <body>
 
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFRW8HP"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=ENTER_YOUR_TAG_MANAGER_ID"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 

@@ -1,6 +1,5 @@
 <?php
-
-// $link = mysqli_connect("localhost", "sharan", "sharan@quadbtech.com","test_helpingkey");
+// link to mysql database here
 $link = mysqli_connect("localhost", "root", "", "test_helpingkey");
 
 if (mysqli_connect_error()){
